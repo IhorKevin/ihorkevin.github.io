@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form action="#">
+    Name <br/>
+    <input type="text" name="Text"/><br/>
+    Email <br/>
+    <input type="email" name="Email"/><br/><br/>
+    Sex<br/>
+    <input type="radio" value="male" name="Sex"/>Male
+    <input type="radio" value="female" name="Sex"/>Female <br/>
+    Current status<br/><br/>
+    <input type="checkbox" mane="Stud" value="Srudent">Student<br/>
+    <input type="checkbox" mane="Empl" value="Employed">Employed<br/>
+    <input type="checkbox" name="Unempl" value="Unemployed">Unemployed<br/>
+    <br/>
+    Month and Year of Birth<br/>
+    <select name="Month">
+        <option value="January">January</option>
+        <option value="February">February</option>
+        <option value="March">March</option>
+        <option value="April">April</option>
+        <option value="May">May</option>
+        <option value="June">June</option>
+        <option value="July">July</option>
+        <option value="August">August</option>
+        <option value="September">September</option>
+        <option value="October">October</option>
+        <option value="November">November</option>
+        <option value="December">December</option>
+    </select>
+
+    <select name="Year">
+        <option value="y12">1995</option>
+        <option value="y11">1994</option>
+        <option value="y10">1993</option>
+        <option value="y9">1992</option>
+        <option value="y8">1991</option>
+        <option value="y7">1990</option>
+        <option value="y6">1989</option>
+        <option value="y5">1988</option>
+        <option value="y4">1987</option>
+        <option value="y3">1986</option>
+        <option value="y2">1985</option>
+        <option value="y1" selected>1984</option>
+    </select>
+<br/><br/>
+Skills and Technologies <br/>
+    <select name="Skills"  size="10" multiple>
+        <optgroup label="Tech skills">
+            <option value="v1">HTML</option>
+            <option value="v2">CSS</option>
+            <option value="v3">JavaScript</option>
+            <option value="v4">git</option>
+        </optgroup>
+        <optgroup label="Soft skills">
+            <option value="v5">Timr managament</option>
+            <option value="v6">Proactivity</option>
+            <option value="v7">Teamwork</option>
+            <option value="v8">Leadership</option>
+        </optgroup>
+    </select>
+<br/><br/>
+Photo
+    <input type="file"/>
+<br/>
+Comments <br/>
+    <textarea name="Comments"  cols="20" rows="3"></textarea>
+<br/>
+    <input type="submit"/>
+</form>
+</body>
+</html>
