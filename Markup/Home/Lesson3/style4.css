@@ -6,6 +6,7 @@ a[href*="google"] {
     color:#666;
 }
 a[target="_blank"]:after {
+    margin: 0 0 0 5px;
     content: '⇱';
     position: absolute;
     transform: rotate(90deg);
