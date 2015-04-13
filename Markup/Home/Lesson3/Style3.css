@@ -1,0 +1,12 @@
+p:not(.normal) {
+    text-transform: uppercase ;
+}
+p:first-of-type {
+    color: darkorange;
+}
+p:last-child {
+    color: darkorange;
+}
+p:only-of-type {
+    color: darkorange;
+}
