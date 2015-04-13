@@ -19,6 +19,9 @@ em {
 ul > li {
     font-weight: bold;
 }
+ul li ol li {
+    font-weight: normal;
+} /*костиль, який виправляє жирність liшок*/
 #allotment.plants-list ul li ol.fruits-list li{
     color: grey;
 } /*тут не придумав простіший шлях*/
