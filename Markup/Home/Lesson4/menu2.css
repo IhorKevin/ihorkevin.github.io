@@ -34,4 +34,6 @@ a {
 }
 .li:hover {
     background-color: #eeeeee;
+    box-shadow: 0 0 3px #666666;
+
 }
