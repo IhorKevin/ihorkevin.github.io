@@ -54,10 +54,12 @@ li:hover a{
     text-transform: none;
     font-family: 'Arial', sans-serif;
     font-size: 12px;
+    box-shadow: 0 2px 2px -2px rgba(0 0 0 0.6);
 }
 .submenu a {
     margin-top: 10px;
 }
 li:hover .submenu {
     display: block;
+    overflow: hidden;
 }
