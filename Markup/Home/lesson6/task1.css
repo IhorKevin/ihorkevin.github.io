@@ -1,0 +1,143 @@
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.offer_section {
+    padding: 60px 0;
+}
+.whatwehave {
+    font-size: 30px;
+    color: #41525c;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0 auto 60px auto;
+}
+.offer {
+    text-align: center;
+}
+.offer__item {
+    display: inline-block;
+    width: 290px;
+    height: 440px;
+    border: 1px solid #e8eaec;
+    border-radius: 4px;
+    margin-left: -7px;
+}
+.offer__item-standart {
+    background-color: #37c2d3;
+}
+.offer__item-best {
+    background-color: #ec8136;
+    border: 4px solid #ec8136;
+    height: 460px;
+    box-shadow: 0 0 9px #1575af;
+    position: relative;
+    z-index: 1;
+}
+.offer__item-best .item__title {
+    line-height: 73px;
+}
+.offer__item-best .item__info {
+    height: 387px;
+}
+.offer__item-best .info__button {
+    background-color: #ec8136;
+    box-shadow: 0 3px 0 #b3560b;
+}
+.offer__item-ultimate {
+    background-color: #1cb79a;
+}
+.item__title {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    line-height: 63px;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0;
+}
+.item__info {
+    background-color: white;
+    color: #3f4042;
+    height: 377px;
+}
+.info__title {
+    font-weight: bold;
+    color: #3f4042;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    line-height: 63px;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+.info__price {
+    font-size: 72px;
+    font-weight: bold;
+    margin: 0;
+    height: 84px;
+}
+.info__price:before {
+    font-size: 22px;
+    content: '$';
+    vertical-align: top;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: normal;
+
+}
+.info__price:after {
+    content: 'Monthly';
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: -5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    vertical-align: bottom;
+}
+.info_list {
+    list-style: none;
+    width: 260px;
+    margin: 16px auto;
+    padding: 0;
+}
+.info_list__service {
+    text-align: left;
+    background-color: #f5f5f6;
+    font-size: 15px;
+    margin-bottom: 1px;
+    line-height: 33px;
+    vertical-align: middle;
+    letter-spacing: 0.05em;
+}
+.info_list__service:nth-child(2n+1){
+    background-color: #edf5fd;
+}
+.info_list__service:before {
+    content: url(Marker.png);
+    padding-right: 17px;
+    padding-left: 33px;
+}
+.info__button {
+    position: relative;
+    width: 252px;
+    height: 38px;
+    margin: auto;
+    top: 1px;
+    color: white;
+    background-color: #3371a6;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 0 3px 0 #16436a;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    display: block;
+}
+.info__button:hover {
+    margin-top: 20px;
+    box-shadow: none;
+}
