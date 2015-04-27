@@ -30,7 +30,7 @@ body {
 .client {
     display: inline-block;
     width: 490px;
-    margin-right: 22px;
+    margin-right: 20px;
 }
 .client__picture {
     width: 99px;
@@ -46,7 +46,14 @@ body {
     padding: 14px;
     display: inline-block;
     box-sizing: border-box;
-
+    margin-left: 25px;
+}
+.client__comment:before {
+    background: transparent;
+    content: url(triangle.png);
+    position: relative;
+    left: -30px;
+    float: left;
 }
 .comment_head {
     height: 21px;
