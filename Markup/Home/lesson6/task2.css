@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+}
+.testimonials {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    background-image: url(bg.jpg);
+    width: 100$;
+    min-width: 1024px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0;
+}
+.wrap {
+    width: 1024px;
+    margin: auto;
+}
+.client_says {
+    text-transform: uppercase;
+    color: #3170a8;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: .01em;
+    margin: 0 0 50px 0;
+}
+.client_says-first {
+    color: #ee8129;
+}
+.client {
+    display: inline-block;
+    width: 490px;
+    margin-right: 22px;
+}
+.client__picture {
+    width: 99px;
+    height: 98px;
+    vertical-align: top;
+}
+.client__comment {
+    background-color: #f7f7f7;
+    width: 364px;
+    min-height: 98px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 2px rgba(0 0 0 .2);
+    padding: 14px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.comment_head {
+    height: 21px;
+    border-bottom: 1px dotted #666666;
+    font-style: italic;
+    color: #3070a8;
+    letter-spacing: .025em;
+}
+.head__name {
+    float: left;
+    margin-top: -3px;
+}
+.head__name:before {
+    content: ' - ';
+    }
+.head__type {
+    float: right;
+    margin-top: -3px;
+
+}
+.comment {
+    color: #666666;
+    letter-spacing: .025em;
+    line-height: 20px;
+    vertical-align: bottom;
+}
