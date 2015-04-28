@@ -1,0 +1,22 @@
+.sivtsev {
+    width: 400px;
+    margin: auto;
+    font-family: 'Arial', sans-serif;
+    font-size: 72px;
+    text-align: justify;
+}
+.sivtsev p {
+    line-height: 1em;
+    margin: 0;
+    text-shadow: 1px 1px 6px black;
+    color: rgba(0,0,0,0);
+}
+.sivtsev p:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.uline {
+    height: 2px;
+    background-color: #ffcccc;
+}
