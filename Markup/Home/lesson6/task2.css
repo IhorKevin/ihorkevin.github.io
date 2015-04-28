@@ -7,7 +7,6 @@ body {
     background-image: url(bg.jpg);
     width: 100$;
     min-width: 1024px;
-    background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 0;
 }
@@ -22,7 +21,7 @@ body {
     text-align: center;
     font-weight: normal;
     letter-spacing: .01em;
-    margin: 0 0 50px 0;
+    margin: 0;
 }
 .client_says-first {
     color: #ee8129;
@@ -30,34 +29,46 @@ body {
 .client {
     display: inline-block;
     width: 490px;
-    margin-right: 20px;
+    margin-top: 50px;
+    vertical-align: top;
+}
+.client:nth-child(2n+1) {
+    margin-right: 43px;
 }
 .client__picture {
     width: 99px;
     height: 98px;
     vertical-align: top;
+    float: left;
+    overflow: hidden;
+}
+.comment_wrap {
+    width: 364px;
+    min-height: 96px;
+    margin: 0 0 0 24px;
+    padding: 0;
+    display: inline-block;
+    border: 1px solid #e0e0e0;
+    box-shadow: 1px 1px 2px rgba(0 0 0 .2);
+    position: relative;
+    float: left;
+}
+.comment_wrap:before {
+    content: url(triangle.png);
+    top: 36px;
+    left: -16px;
+    position: absolute;
 }
 .client__comment {
     background-color: #f7f7f7;
-    width: 364px;
-    min-height: 98px;
-    border: 1px solid #e0e0e0;
-    box-shadow: 1px 1px 2px rgba(0 0 0 .2);
+    height: 100%;
     padding: 14px;
-    display: inline-block;
     box-sizing: border-box;
-    margin-left: 25px;
-}
-.client__comment:before {
-    background: transparent;
-    content: url(triangle.png);
-    position: relative;
-    left: -30px;
-    float: left;
+    min-height: 96px;
 }
 .comment_head {
     height: 21px;
-    border-bottom: 1px dotted #666666;
+    border-bottom: 2px dotted #666666;
     font-style: italic;
     color: #3070a8;
     letter-spacing: .025em;
@@ -65,6 +76,10 @@ body {
 .head__name {
     float: left;
     margin-top: -3px;
+    max-width: 260px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .head__name:before {
     content: ' - ';
@@ -78,5 +93,5 @@ body {
     color: #666666;
     letter-spacing: .025em;
     line-height: 20px;
-    vertical-align: bottom;
+    padding-top: 6px;
 }
