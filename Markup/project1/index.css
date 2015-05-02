@@ -1,3 +1,5 @@
+@import url("blocks/header.css");
 .wrap {
     max-width: 1024px;
+    margin: auto;
 }

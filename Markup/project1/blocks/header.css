@@ -19,6 +19,7 @@
 .menu {
     float: right;
     margin: 0;
+    padding: 0;
 }
 .menu__item {
     font-size: 14px;
@@ -29,8 +30,6 @@
     text-transform: uppercase;
     letter-spacing: .025em;
     height: 90px;
-    vertical-align: bottom;
-    box-sizing: border-box;
 }
 .menu__item:hover {
     border-bottom: 4px solid #989898;
