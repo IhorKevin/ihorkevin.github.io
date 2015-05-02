@@ -29,7 +29,9 @@
     padding: 0 20px;
     text-transform: uppercase;
     letter-spacing: .025em;
+    box-sizing: border-box;
     height: 90px;
+    vertical-align: bottom;
 }
 .menu__item:hover {
     border-bottom: 4px solid #989898;
