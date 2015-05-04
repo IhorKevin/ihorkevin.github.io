@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'FuturaDemiCTT', sans-serif;
+    src: url(../FuturaDemiCTT.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'FuturaBookCTT', sans-serif;
+    src: url(../FuturaBookCTT.ttf);
+    font-weight: normal;
+}
+.intro {
+    text-align: center;
+    margin: 0 auto;
+    padding: 100px 0;
+    font-family:  sans-serif;
+    width: 100%;
+    color: #fff;
+    background-image: url(intro_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro__pretitle {
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: FuturaBookCTT, sans-serif;
+}
+.intro__title {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: FuturaDemiCTT, sans-serif;
+    margin: 0;
+}
+.intro__posttitle {
+    font-style: italic;
+    max-width: 580px;
+    margin: 20px auto 40px auto;
+    font-family: Calibri, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+
+}
+.intro__button {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 245px;
+    margin: 0 auto;
+    line-height: 57px;
+    border: 1px solid #fff;
+    border-radius: 2px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: .025em;
+}
+.intro__button:hover {
+    background: rgba(255,255,255,0.3);
+}
+.intro__button:active {
+    background-color: white;
+    color: #3070a8;
+}
