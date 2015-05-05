@@ -1,0 +1,45 @@
+.wrap {
+    max-width: 1024px;
+}
+.arrow {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #ffcb53, #eaba4c);
+    height: 54px;
+    min-width: 320px;
+    position: relative;
+    font-size: 12px;
+}
+.arrow:after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 13px solid rgba(0,0,0,0);
+    border-top: 27px solid white;
+    border-right: 13px solid white;
+    border-bottom: 27px solid white;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.arrow__form {
+    height: 54px;
+}
+.arrow__textplace {
+    height: 25px;
+    width: 50%;
+    margin: 5px 4px 0 4px;
+    padding: 0;
+    box-sizing: border-box;
+}
+.arrow__button {
+    margin: 0;
+    box-sizing: border-box;
+}
+.arrow__example {
+    margin: 4px 4px 0 4px;
+    display: inline-block;
+}
+.arrow__example a {
+    color: #000000;
+    text-decoration: underline dotted;
+}

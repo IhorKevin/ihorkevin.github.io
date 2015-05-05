@@ -1,0 +1,12 @@
+@import url("blocks/header.css");
+@import url("blocks/intro.css");
+@import url("blocks/services.css");
+@import url("blocks/middle_section.css");
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    max-width: 1024px;
+    margin: auto;
+}

@@ -1,0 +1,61 @@
+body {
+    font-family: 'myriad pro', sans-serif;
+    font-size: 14px;
+    color: #959595;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.wrap {
+    max-width: 1280px;
+    margin: auto;
+}
+.items {
+}
+.items__title {
+    font-size: 48px;
+    color: orange;
+    padding-left: 60px;
+}
+.theone {
+    max-width: 45%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+.theone:nth-child(2n+1) {
+    margin-right: 40px;
+}
+.theone__name {
+    font-size: 22px;
+    color: #637883;
+    margin: 0;
+}
+.theone__pic {
+    width: 85px;
+    height: 85px;
+    display: block;
+    float: left;
+    margin-right: 30px;
+    border-radius: 5px;
+}
+.textblock {
+    width: 100%;
+    height: 85px;
+    display: block;
+}
+.theone__text {
+    margin: 0;
+}
+.more {
+    font-size: 14px;
+    color: #e4551d;
+    display: inline-block;
+    text-decoration: none;
+}
+.more:before {
+    content: ' + ';
+}
+.more:hover {
+    text-decoration: underline;
+}

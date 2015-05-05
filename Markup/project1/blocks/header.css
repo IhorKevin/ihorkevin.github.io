@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.header {
+    max-width: 1024px;
+    min-height: 116px;
+    margin: 0 auto;
+    padding: 0;
+}
+.logo {
+    float: left;
+    display: inline-block;
+    line-height: 116px;
+}
+.logo__pic {
+    vertical-align: middle;
+}
+.header__navigation {
+    line-height: 116px;
+}
+.menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.menu__item {
+    font-size: 14px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #989898;
+    display: inline-block;
+    padding: 0 20px;
+    text-transform: uppercase;
+    letter-spacing: .025em;
+    box-sizing: border-box;
+    height: 90px;
+    vertical-align: bottom;
+}
+.menu__item:hover {
+    border-bottom: 4px solid #989898;
+}
+.menu__item-current {
+    color: #3070a8;
+    border-bottom: 4px solid;
+}
+.menu__item_link {
+    text-decoration: none;
+    color: inherit;
+}
