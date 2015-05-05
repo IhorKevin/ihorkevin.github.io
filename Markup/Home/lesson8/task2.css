@@ -3,7 +3,7 @@
 }
 .arrow {
     font-family: 'Arial', sans-serif;
-    background-color: #ffcc66;
+    background: linear-gradient(to bottom, #ffcb53, #eaba4c);
     height: 54px;
     min-width: 320px;
     position: relative;
@@ -35,7 +35,11 @@
     margin: 0;
     box-sizing: border-box;
 }
-.arrow__checkbox {
-    margin: 5px 4px 0 4px;
-    vertical-align: bottom;
+.arrow__example {
+    margin: 4px 4px 0 4px;
+    display: inline-block;
+}
+.arrow__example a {
+    color: #000000;
+    text-decoration: underline dotted;
 }
