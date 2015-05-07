@@ -34,7 +34,7 @@
     vertical-align: bottom;
 }
 .menu__item:hover {
-    border-bottom: 4px solid #989898;
+    border-bottom: 4px solid #3070a8;
 }
 .menu__item-current {
     color: #3070a8;
