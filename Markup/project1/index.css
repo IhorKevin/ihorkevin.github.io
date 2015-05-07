@@ -2,6 +2,7 @@
 @import url("blocks/intro.css");
 @import url("blocks/services.css");
 @import url("blocks/middle_section.css");
+@import url("blocks/pricing.css");
 body {
     margin: 0;
     padding: 0;
