@@ -4,6 +4,7 @@
     min-height: 116px;
     margin: 0 auto;
     padding: 0;
+    overflow: hidden;
 }
 .logo {
     float: left;
