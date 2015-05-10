@@ -97,13 +97,14 @@
     top: 36px;
 }
 .testimonial__head {
-    height: 36px;
+    min-height: 36px;
     white-space: nowrap;
     color: #3070a8;
     border-bottom: 2px dotted #666;
     line-height: 36px;
     vertical-align: middle;
     font-style: italic;
+    overflow: hidden;
 }
 .testimohial__client {
     text-overflow: ellipsis;

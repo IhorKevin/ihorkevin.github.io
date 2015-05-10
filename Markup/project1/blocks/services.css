@@ -50,3 +50,24 @@
     color: #999;
     margin: 0;
 }
+@media (max-width: 1024px) {
+    .service {
+        display: block;
+        margin: 0 0 20px 0;
+        width: 100%;
+        position: relative;
+        min-height: 141px;
+    }
+    .service__pic {
+        position: absolute;
+        left:0;
+        display: block;
+        width: 141px;
+        height: 141px;
+    }
+    .service__title,
+    .service__text{
+        margin-left: 170px;
+        text-align: left;
+    }
+}
