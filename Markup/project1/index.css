@@ -4,11 +4,14 @@
 @import url("blocks/middle_section.css");
 @import url("blocks/pricing.css");
 @import url("blocks/testimonials.css");
+@import url("blocks/footer.css");
+@import url("blocks/subfooter.css");
 body {
     margin: 0;
     padding: 0;
 }
 .wrap {
     max-width: 1024px;
+    min-width: 300px;
     margin: auto;
 }
