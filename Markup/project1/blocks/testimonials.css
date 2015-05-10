@@ -23,7 +23,7 @@
 .testimonials__title {
     font-family: 'FuturaDemiCTT', sans-serif;
     font-size: 40px;
-    line-height: 18px;
+    line-height: 1;
     letter-spacing: .01em;
     text-transform: uppercase;
     text-align: center;

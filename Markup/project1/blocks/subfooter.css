@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.subfooter {
+    padding: 25px 0;
+    margin: 0;
+    background: #3070a8;
+}
+.copyright {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+}
+.author {
+    color: #000;
+    font-weight: bold;
+}
