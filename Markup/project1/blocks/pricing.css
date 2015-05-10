@@ -153,6 +153,7 @@
     line-height: 16px;
     letter-spacing: .05em;
     box-shadow: 0 3px 0 #16436a;
+    cursor: pointer;
 }
 .info__button:active {
     position: relative;
