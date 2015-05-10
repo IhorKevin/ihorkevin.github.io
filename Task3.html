@@ -5,29 +5,21 @@
     <title></title>
 </head>
 <body>
-Name
 <form action="#">
-    <input type="text"/>
-</form>
-Email
-<form action="#">
-    <input type="email">
-</form>
-<form action="#">
+    Name <br/>
+    <input type="text" name="Text"/><br/>
+    Email <br/>
+    <input type="email" name="Email"/><br/><br/>
     Sex<br/>
     <input type="radio" value="male" name="Sex"/>Male
-    <input type="radio" value="female" name="sex"/>Female
-</form>
-<form action="#">
-    Current status<br/>
-    <input type="checkbox"  value="Srudent">Student<br/>
-    <input type="checkbox"  value="Employed">Employed<br/>
-    <input type="checkbox"  value="Unemployed">Unemployed<br/>
-</form>
-<form action="#">
+    <input type="radio" value="female" name="Sex"/>Female <br/>
+    Current status<br/><br/>
+    <input type="checkbox" mane="Stud" value="Srudent">Student<br/>
+    <input type="checkbox" mane="Empl" value="Employed">Employed<br/>
+    <input type="checkbox" name="Unempl" value="Unemployed">Unemployed<br/>
     <br/>
     Month and Year of Birth<br/>
-    <select >
+    <select name="Month">
         <option value="January">January</option>
         <option value="February">February</option>
         <option value="March">March</option>
@@ -42,7 +34,7 @@ Email
         <option value="December">December</option>
     </select>
 
-    <select >
+    <select name="Year">
         <option value="y12">1995</option>
         <option value="y11">1994</option>
         <option value="y10">1993</option>
@@ -56,10 +48,9 @@ Email
         <option value="y2">1985</option>
         <option value="y1" selected>1984</option>
     </select>
-</form><br/>
-Skills and Technologies
-<form action="#">
-    <select size="10">
+<br/><br/>
+Skills and Technologies <br/>
+    <select name="Skills"  size="10" multiple>
         <optgroup label="Tech skills">
             <option value="v1">HTML</option>
             <option value="v2">CSS</option>
@@ -73,17 +64,14 @@ Skills and Technologies
             <option value="v8">Leadership</option>
         </optgroup>
     </select>
-</form><br/>
+<br/><br/>
 Photo
-<form action="#">
     <input type="file"/>
-</form><br/>
-Comments
-<form action="#">
+<br/>
+Comments <br/>
     <textarea name="Comments"  cols="20" rows="3"></textarea>
-</form><br/>
-<form action="#">
-    <button type="button">Save</button>
+<br/>
+    <input type="submit"/>
 </form>
 </body>
 </html>
