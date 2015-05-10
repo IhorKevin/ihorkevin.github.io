@@ -1,0 +1,52 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'FuturaBookCTT', sans-serif;
+    src: url(../FuturaBookCTT.ttf);
+    font-weight: normal;
+}
+.services {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 0;
+    text-align: center;
+}
+.services__title {
+    color: #41525c;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+.service {
+    width: 305px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 50px;
+}
+.service:last-child {
+    margin-right: 0;
+}
+.service__pic {
+    height: 100%;
+    vertical-align: top;
+}
+.service__title {
+    color: #3070a8;
+    font-family: FuturaBookCTT, sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    letter-spacing: .025em;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+.service__text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: .025em;
+    color: #999;
+    margin: 0;
+}
