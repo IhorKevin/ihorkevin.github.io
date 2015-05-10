@@ -1,0 +1,126 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+@font-face {
+    font-family: 'FuturaDemiCTT', sans-serif;
+    src: url(../FuturaDemiCTT.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'FuturaBookCTT', sans-serif;
+    src: url(../FuturaBookCTT.ttf);
+    font-weight: normal;
+}
+.testimonials {
+    width: 100%;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    padding: 70px 0 40px 0;
+    text-align: center;
+}
+.wrap {
+    max-width: 1024px;
+    margin: auto;
+}
+.testimonials__title {
+    font-family: 'FuturaDemiCTT', sans-serif;
+    font-size: 40px;
+    line-height: 18px;
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+    color: #3170a8;
+}
+.testimonials__title-first {
+    color: #ee8129;
+    font-family: 'FuturaBookCTT', sans-serif;
+}
+.testimonial {
+    width: 512px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+.testimonial:nth-child(2n+1) .testimonial__inner {
+    margin-right: 0;
+    margin-left:20px;
+}
+.testimonial__inner {
+    margin-right: 20px;
+    position: relative;
+    vertical-align: top;
+}
+@media (max-width: 1024px) {
+    .testimonial {
+        display: block;
+        margin: 0 auto 30px auto;
+     }
+    .testimonial__inner {
+        margin: 0;
+    }
+    .testimonial:nth-child(2n+1) .testimonial__inner {
+        margin-left:0;
+    }
+}
+@media (max-width: 512px) {
+    .testimonial {
+        width: 100%;
+    }
+    .testimohial__client {
+        max-width: 150px;
+    }
+}
+.testimonial__pic {
+    height: 98px;
+    width: 99px;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+}
+.testimonail__content {
+    margin-left: 125px;
+    text-align: left;
+    background-color: #fff;
+    min-height: 98px;
+    box-sizing: border-box;
+    border: 1px solid #666666;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    padding: 0 14px;
+    position: relative;
+}
+.testimonail__content:before {
+    content: url(triangle.png);
+    position: absolute;
+    left: -16px;
+    top: 36px;
+}
+.testimonial__head {
+    height: 36px;
+    white-space: nowrap;
+    color: #3070a8;
+    border-bottom: 2px dotted #666;
+    line-height: 36px;
+    vertical-align: middle;
+    font-style: italic;
+}
+.testimohial__client {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 270px;
+    white-space: nowrap;
+    float: left;
+    display: inline-block;
+}
+.testimohial__client:before {
+    content: ' - '
+}
+.testimonial__type {
+    float: right;
+}
+.testimonial__text {
+    margin: 8px 0;
+    line-height: 20px;
+
+}
