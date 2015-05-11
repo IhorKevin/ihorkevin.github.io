@@ -4,6 +4,8 @@
 .arrow {
     font-family: 'Arial', sans-serif;
     background: linear-gradient(to bottom, #ffcb53, #eaba4c);
+    background: -webkit-linear-gradient(to bottom, #ffcb53, #eaba4c);
+    Stashed changes
     height: 54px;
     min-width: 320px;
     position: relative;
