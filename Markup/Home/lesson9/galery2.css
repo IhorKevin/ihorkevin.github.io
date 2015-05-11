@@ -1,0 +1,84 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+.galery {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    max-width: 1280px;
+    margin: auto;
+}
+.galery__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 41px;
+    color: #2e3a4f;
+}
+.galery__subtitle {
+    color: #909090;
+    font-size: 15px;
+    line-height: 23px;
+}
+.photo {
+    display: inline-block;
+    padding: 15px;
+    width: 360px;
+    height: 260px;
+    position: relative;
+}
+.photo__orig {
+    vertical-align: top;
+}
+.photo__cover {
+    background-color: rgba(37,166,247,.9);
+    width: 360px;
+    height: 260px;
+    position: absolute;
+    top:15px;
+    vertical-align: middle;
+    line-height: 260px;
+    display: none;
+}
+.photo__button {
+    color: #fff;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    line-height: 40px;
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.photo:hover .photo__cover {
+    display: block;
+}
+.photo__button a {
+    color: inherit;
+}
+.preview {
+    background: rgba(255,255,255,.9);
+    max-width: 1174px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.preview__photo {
+    position: relative;
+    vertical-align: top;
+    top: 157px;
+    max-width: 100%;
+    border: 3px solid #999;
+    border-radius: 2px;
+}
+.preview__close {
+    width: 40px;
+    height: 40px;
+    background-color: #f74c26;
+    position: absolute;
+    vertical-align: middle;
+    line-height: 40px;
+    color: #fff;
+    right: 40px;
+    top: 140px;
+    cursor: pointer;
+}
