@@ -34,6 +34,10 @@
     display: block;
     padding-left: 60px;
 }
+.contacts__item a {
+    text-decoration: none;
+    color: inherit;
+}
 .contacts__item:before {
     content: ' ';
     background-image: url(footer_contacts_sprite.png);
