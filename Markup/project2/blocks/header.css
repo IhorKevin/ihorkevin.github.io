@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    src: url(../fonts/HelveticaRegular.ttf);
+    font-weight: normal;
+}
+.top {
+    width: 100%;
+    min-height: 77px;
+    line-height: 77px;
+    background-color: #3498db;
+    color: #fff;
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+.university_logo {
+    height: 53px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.university_name {
+    font-size: 26px;
+    font-weight: normal;
+    display: inline-block;
+    line-height: 42px;
+    text-transform: uppercase;
+    margin: 0;
+    vertical-align: middle;
+}
+.university_name__link {
+    color: #fff;
+    text-decoration: none;
+}
+.social {
+    display: inline-block;
+    float: right;
+}
+.social__title {
+    font-size: 13px;
+    line-height: 32px;
+    padding-right: 3px;
+}
+.social__button {
+    display: inline-block;
+    background: url(../icons_social_sprite.png) 0 0 no-repeat;
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+    padding: 0 3px;
+}
+.social__button:hover {
+    background-position: 0 -21px;
+}
+.social__button-g {
+    background-position: -28px 0;
+}
+.social__button-g:hover {
+    background-position: -28px -21px;
+}
+.social__button-twi {
+    background-position: -57px 0;
+}
+.social__button-twi:hover {
+    background-position: -57px -21px;
+}
+@media screen and (max-width:999px) {
+    .wrap {
+        width: 800px;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width:799px) {
+    .wrap {
+        width: 320px;
+        padding: 15px 0;
+    }
+    .university_logo,
+    .university_name,
+    .social {
+        display: block;
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    .university_name {
+        width: 70%;
+        border-bottom: 1px solid #2980b9;
+        text-align: center;
+    }
+    .social {
+        line-height: 40px;
+    }
+}
