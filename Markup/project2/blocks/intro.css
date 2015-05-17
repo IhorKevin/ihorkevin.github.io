@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    src: url(../fonts/HelveticaRegular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    src: url(../fonts/HelveticaBold.ttf);
+    font-weight: bold;
+}
+.intro {
+    width: 100%;
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+    background: url(bg_intro.jpg) center top no-repeat #f2f2f2;
+    color: #333;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    padding: 30px 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.welcome {
+    font-size: 50px;
+    line-height: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0 20px 0;
+    color: #fff;
+}
+.welcome__text {
+    font-size: 30px;
+    line-height: 40px;
+    color: #fff;
+    margin: 0;
+}
+.form {
+    width: 360px;
+    background: #fff;
+    float: right;
+    margin-left: 50px;
+}
+.form__inner {
+    border-bottom: 5px solid #3498db;
+    padding: 30px 20px;
+}
+.form__title {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+.form__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    padding: 0 0 0 15px;
+    font-size: 15px;
+    line-height: 34px;
+    color: #333;
+    background: #f2f2f2;
+    margin-bottom: 9px;
+    box-sizing: border-box;
+}
+.form__input-address {
+    height: 74px;
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+}
+.form__button {
+    display: block;
+    width: 220px;
+    line-height: 48px;
+    border: 0;
+    padding: 0;
+    margin: 26px auto 0 auto;
+    color: #fff;
+    background: #e74c3c;
+    font-size: 25px;
+    cursor: pointer;
+}
+.form__button:hover {
+    background: #e8220c;
+}
+.form__button:active {
+    background: #3498db;
+}
+.about {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 130px 0 15px 0;
+}
+.about__text {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+}
+@media screen and (max-width:999px) {
+    .wrap {
+        width: 800px;
+        padding: 30px 20px;
+    }
+    .form {
+        margin-left: 30px;
+        width: 340px;
+    }
+    .welcome {
+        font-size: 45px;
+        line-height: 42px;
+    }
+    .welcome__text {
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+@media screen and (max-width:799px) {
+    .wrap {
+        width: 320px;
+        padding: 15px 0;
+        position: relative;
+        overflow: visible;
+    }
+    .form {
+        width: 300px;
+        margin: auto;
+        float: none;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        right: 0;
+}
+    .form__button {
+        width: 200px;
+    }
+    .welcome {
+        text-align: center;
+        margin: 20px auto 10px auto;
+    }
+    .welcome__text {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+    }
+    .about {
+        margin-top: 590px;
+        text-align: center;
+    }
+    .about__text {
+        text-align: center;
+        padding: 0 20px 20px 20px;
+    }
+}
