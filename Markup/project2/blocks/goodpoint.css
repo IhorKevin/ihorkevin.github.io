@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    src: url(../fonts/HelveticaRegular.ttf);
+    font-weight: normal;
+}
+.goodpoints {
+    width: 100%;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    padding: 35px 5px 30px 5px;
+    box-sizing: border-box;
+}
+.section_title {
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+    font-size: 25px;
+    line-height: 42px;
+    font-weight: normal;
+    color: #3498db;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+.point {
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+    color: #333;
+    display: inline-block;
+    width: 290px;
+    margin-right: 60px;
+    vertical-align: top;
+}
+.point:last-child {
+    margin-right: 0;
+}
+.point_pic {
+    width: 290px;
+    height: 159px;
+    vertical-align: top;
+    margin-bottom: 12px;
+}
+.point__title {
+    font-size: 15px;
+    line-height: 42px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.point__text {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 25px 0;
+    height: 120px;
+    overflow: hidden;
+}
+.point__button {
+    font-size: 13px;
+    line-height: 50px;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e5e5e5;
+    border-radius: 50%;
+    margin: auto;
+}
+.point__button:hover {
+    background: #f2f2f2;
+}
+.point__button:active {
+    background: #e5e5e5;
+    color: #fff;
+}
+@media screen and (max-width:999px) {
+    .wrap {
+        width: 800px;
+        padding: 35px 20px 30px 20px;
+    }
+    .point {
+        display: block;
+        margin: 0 0 35px 0;
+        width: 100%;
+    }
+    .point_pic {
+        float: left;
+        margin-right: 22px;
+    }
+    .point__title {
+        text-align: left;
+        line-height: 1;
+        margin-bottom: 12px;
+    }
+    .point__text {
+        text-align: left;
+        margin: 0 0 20px 0;
+        height: 80px;
+        overflow: hidden;
+    }
+    .point__button {
+        display: inline-block;
+    }
+}
+@media screen and (max-width:799px) {
+    .wrap {
+        width: 320px;
+        padding: 35px 0 30px 0;
+    }
+    .section_title {
+        text-align: center;
+    }
+    .point {
+        width: 290px;
+        display: block;
+        margin: 0 auto 40px auto;
+    }
+    .point_pic {
+        float: none;
+    }
+    .point__title {
+        text-align: center;
+        line-height: 42px;
+        margin: 0;
+    }
+    .point__text {
+        text-align: center;
+        height: auto;
+        max-height: 120px;
+    }
+    .point__button {
+        display: block;
+    }
+}
