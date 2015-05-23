@@ -107,6 +107,9 @@
     margin: -4px 0 0 8px;
 }
 .start_button:hover {
+    background: #e8220c;
+}
+.start_button:active {
     background: #3498db;
 }
 @media screen and (max-width:999px) {
