@@ -6,7 +6,7 @@
 .goodpoints {
     width: 100%;
 }
-.wrap {
+.goodpoints_wrap {
     width: 1000px;
     margin: auto;
     padding: 35px 5px 30px 5px;
@@ -15,7 +15,7 @@
 .section_title {
     font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
     font-size: 25px;
-    line-height: 42px;
+    line-height: 1;
     font-weight: normal;
     color: #3498db;
     text-transform: uppercase;
@@ -78,7 +78,7 @@
     color: #fff;
 }
 @media screen and (max-width:999px) {
-    .wrap {
+    .goodpoints_wrap {
         width: 800px;
         padding: 35px 20px 30px 20px;
     }
@@ -107,9 +107,9 @@
     }
 }
 @media screen and (max-width:799px) {
-    .wrap {
+    .goodpoints_wrap {
         width: 320px;
-        padding: 35px 0 30px 0;
+        padding: 35px 0 50px 0;
     }
     .section_title {
         text-align: center;
@@ -119,13 +119,18 @@
         display: block;
         margin: 0 auto 40px auto;
     }
+    .point:last-child {
+        margin-right: auto;
+        margin-bottom: 0;
+    }
     .point_pic {
         float: none;
+        margin-right: 0;
     }
     .point__title {
         text-align: center;
         line-height: 42px;
-        margin: 0;
+        margin: auto;
     }
     .point__text {
         text-align: center;

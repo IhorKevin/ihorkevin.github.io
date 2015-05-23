@@ -9,7 +9,7 @@
     color: #fff;
     font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
 }
-.wrap {
+.footer_wrap {
     width: 1000px;
     margin: auto;
     padding: 40px 5px 75px 5px;
@@ -32,8 +32,10 @@
     font-size: 26px;
     font-weight: normal;
     display: inline-block;
+    line-height: 42px;
     text-transform: uppercase;
     margin: 0;
+    vertical-align: middle;
 }
 .university_name-footer {
     height: 70px;
@@ -90,7 +92,7 @@
     margin: 0;
 }
 @media screen and (max-width:999px) {
-    .wrap {
+    .footer_wrap {
         width: 800px;
         padding: 50px 20px 70px 20px;
     }
@@ -102,7 +104,7 @@
     }
 }
 @media screen and (max-width:799px) {
-    .wrap {
+    .footer_wrap {
         width: 320px;
         padding: 30px 0 70px 0;
     }
@@ -118,20 +120,22 @@
     .university_logo {
         height: 53px;
     }
-    .university_name {
+    .university_name-footer {
         width: 55%;
         height: 36px;
         line-height: 1;
-        font-size: 20px;
         border-bottom: 1px solid #2980b9;
         border-right: none;
         text-align: center;
+    }
+    .university_name {
+        font-size: 20px;
     }
     .social {
         line-height: 40px;
     }
     .copyright {
-        margin-top: 40px;
+        margin-top: 30px;
         padding: 0 40px;
         text-align: center;
     }

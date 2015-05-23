@@ -8,7 +8,7 @@
     font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
     background: url(bg_comments.png) bottom no-repeat;
 }
-.wrap {
+.comments_wrap {
     width: 1000px;
     margin: auto;
     padding: 30px 5px 65px 5px;
@@ -19,7 +19,7 @@
 .section_title {
     font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
     font-size: 25px;
-    line-height: 42px;
+    line-height: 1;
     font-weight: normal;
     color: #3498db;
     text-transform: uppercase;
@@ -39,7 +39,7 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 2px;
-    font-size: 19px;
+    font-size: 20px;
     color: #888888;
     text-decoration: none;
     text-align: center;
@@ -111,7 +111,7 @@
     vertical-align: middle;
     text-align: right;
     margin: -4px 0 0 8px;
-    font-size: 17px;
+    font-size: 19px;
 }
 .start_button:hover {
     background: #e8220c;
@@ -120,7 +120,7 @@
     background: #3498db;
 }
 @media screen and (max-width:999px) {
-    .wrap {
+    .comments_wrap {
         width: 800px;
         padding: 30px 20px 65px 20px;
     }
@@ -147,7 +147,7 @@
     .comments {
         background-size: 100% 240px;
     }
-    .wrap {
+    .comments_wrap {
         width: 320px;
         padding: 35px 10px 0 10px;
     }
