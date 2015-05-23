@@ -39,7 +39,12 @@
     border-radius: 50%;
     display: inline-block;
     margin-right: 2px;
+    font-size: 19px;
     color: #888888;
+    text-decoration: none;
+    text-align: center;
+    line-height: 38px;
+    vertical-align: middle;
 }
 .arrow:hover {
     background: #f2f2f2;
@@ -102,9 +107,11 @@
     border: 2px solid #fff;
     display: inline-block;
     border-radius: 50%;
-    line-height: 60px;
+    line-height: 28px;
     vertical-align: middle;
+    text-align: right;
     margin: -4px 0 0 8px;
+    font-size: 17px;
 }
 .start_button:hover {
     background: #e8220c;
