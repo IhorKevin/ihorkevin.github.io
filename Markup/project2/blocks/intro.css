@@ -44,6 +44,7 @@
 .form__inner {
     border-bottom: 5px solid #3498db;
     padding: 30px 20px;
+    position: relative;
 }
 .form__title {
     font-size: 20px;
@@ -64,9 +65,15 @@
     margin-bottom: 9px;
     box-sizing: border-box;
 }
+.icon-down-open {
+    position: absolute;
+    right: 30px;
+    top: 92px;
+}
 .form__input-address {
     height: 74px;
     font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+    resize: none;
 }
 .form__button {
     display: block;
