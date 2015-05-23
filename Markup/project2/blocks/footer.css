@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    src: url(../fonts/HelveticaRegular.ttf);
+    font-weight: normal;
+}
+.footer {
+    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    font-family: 'HelveticaNeueCyr', 'Arial', sans-serif;
+}
+.wrap {
+    width: 1000px;
+    margin: auto;
+    padding: 40px 5px 75px 5px;
+    box-sizing: border-box;
+}
+.logo_block {
+    float: left;
+    margin-right: 22px;
+}
+.university_logo {
+    height: 53px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.university_logo-footer {
+    height: 70px;
+    vertical-align: top;
+}
+.university_name {
+    font-size: 26px;
+    font-weight: normal;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: 0;
+}
+.university_name-footer {
+    height: 70px;
+    line-height: 28px;
+    width: 180px;
+    box-sizing: border-box;
+    padding-top: 7px;
+    border-right: 1px solid #2980b9;
+}
+.university_name__link {
+    color: #fff;
+    text-decoration: none;
+}
+.social {
+    display: inline-block;
+    float: right;
+}
+.social-footer {
+    float: none;
+    vertical-align: top;
+    margin-top: 7px;
+}
+.social__title {
+    font-size: 13px;
+    line-height: 32px;
+    padding-right: 8px;
+}
+.social__button {
+    display: inline-block;
+    background: url(../icons_social_sprite.png) 0 0 no-repeat;
+    height: 21px;
+    width: 21px;
+    vertical-align: middle;
+    padding: 0 3px;
+}
+.social__button:hover {
+    background-position: 0 -21px;
+}
+.social__button-g {
+    background-position: -28px 0;
+}
+.social__button-g:hover {
+    background-position: -28px -21px;
+}
+.social__button-twi {
+    background-position: -57px 0;
+}
+.social__button-twi:hover {
+    background-position: -57px -21px;
+}
+.copyright {
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+}
+@media screen and (max-width:999px) {
+    .wrap {
+        width: 800px;
+        padding: 50px 20px 70px 20px;
+    }
+    .social-footer {
+        margin-top: -5px;
+    }
+    .copyright {
+        line-height: 18px;
+    }
+}
+@media screen and (max-width:799px) {
+    .wrap {
+        width: 320px;
+        padding: 30px 0 70px 0;
+    }
+    .logo_block,
+    .university_logo,
+    .university_name,
+    .social {
+        display: block;
+        float: none;
+        margin: auto;
+        text-align: center;
+    }
+    .university_logo {
+        height: 53px;
+    }
+    .university_name {
+        width: 55%;
+        height: 36px;
+        line-height: 1;
+        font-size: 20px;
+        border-bottom: 1px solid #2980b9;
+        border-right: none;
+        text-align: center;
+    }
+    .social {
+        line-height: 40px;
+    }
+    .copyright {
+        margin-top: 40px;
+        padding: 0 40px;
+        text-align: center;
+    }
+}
