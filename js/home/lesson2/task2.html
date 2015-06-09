@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <title></title>
     <script>
-        var year = prompt('Какой сейчас год?', '');
-        if (year == 2015) {alert('Вы правы!')}
-        else alert('С луны свалися? 2015!');
+        var number = prompt('Введите любое целое число?', '');
+        if (number == 0) {alert('0')} else {
+            if (number > 0) {alert('1')} else {alert('-1')}
+        }
     </script>
 </head>
 <body>
