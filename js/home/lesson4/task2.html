@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function checkSpam(sentense) {
+            sentense = sentense.toLowerCase();
+            function findWord(word){
+                return (sentense.indexOf(word) > -1)
+            }
+            if(findWord('spam') || findWord('sex')) return 'Атата!'
+            else return 'Норм'
+        }
+        console.log(checkSpam('get new Sex videos'));
+        console.log(checkSpam('[SPAM] How to earn fast money?'));
+        console.log(checkSpam('New PSD template'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

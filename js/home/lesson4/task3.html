@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function maxLength20(row) {
+            if(row.length > 19) {
+                if(row.charAt(19) == ' ') return row.substr(0, 19) + '...'
+                else return row.substr(0, 20) + '...'
+            }
+            else return row
+        }
+        console.log(maxLength20('гава гава гава гава гава'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>
