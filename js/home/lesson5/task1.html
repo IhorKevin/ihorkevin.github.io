@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var tasksCompleted = {
+            'Anna': 29,
+            'Serg': 35,
+            'Elena': 1,
+            'Anton': 99
+        };
+        var tasks = 0;
+        var employee ='';
+        for(var key in tasksCompleted) {
+            if(tasks < tasksCompleted[key]) {
+                tasks = tasksCompleted[key];
+                employee = key;
+            }
+        }
+
+        console.log(employee);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
