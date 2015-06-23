@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var vasya = { name: 'Вася', age: 23 };
+        var masha = { name: 'Маша', age: 18 };
+        var vovochka = { name: 'Вовочка', age: 6 };
+
+        var people = [ vasya , masha , vovochka ];
+
+        function ageSort(a, b) {
+            return a.age - b.age;
+        }
+        people.sort(ageSort);
+
+        for(var i in people) {
+            console.log(people[i].name);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

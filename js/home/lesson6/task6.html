@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var strings = ['кришна', 'кришна', 'харе', 'харе', 'харе', 'харе', 'кришна', 'кришна', '8-()' ];
+
+        function unique(arr) {
+            var arrUnq = [];
+            start:
+                    for(var i = 0; i < arr.length; i++) {
+                        for(var j = 0; j < arrUnq.length; j++) {
+                            if(arr[i] == arrUnq[j]) continue start;
+                        }
+                        arrUnq.push(arr[i]);
+                    }
+            return arrUnq;
+        }
+
+        console.log( unique(strings) );
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var obj = {
+            className: 'my menu open menu menu close'
+        };
+
+        function removeClass(obj, cls) {
+            while(obj.className.indexOf(cls) > -1) {
+                var classes = obj.className.split(' ');
+                for(var key in classes) {
+                    if(classes[key] == cls) {
+                        classes.splice(key, 1);
+                        obj.className = classes.join(' ');
+                    }
+                }
+            }
+            return obj.className;
+        }
+
+        console.log(removeClass(obj, 'menu'));
+    </script>
+</head>
+<body>
+
+</body>
+</html>

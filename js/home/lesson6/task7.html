@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var arr = ['воз', 'киборг', 'корсет', 'ЗОВ', 'гробик', 'костер', 'сектор'];
+
+        function anClean(arr) {
+            var arrCln = {}, arrUnq = [];
+            for(var i = 0; i < arr.length; i++) {
+                var str = arr[i].toLowerCase().split('').sort().join('');
+                arrCln[str] = arr[i];
+            }
+            for(var key in arrCln) {
+                arrUnq.push(arrCln[key]);
+            }
+            return arrUnq;
+        }
+
+        console.log( anClean(arr) );
+    </script>
+</head>
+<body>
+
+</body>
+</html>
