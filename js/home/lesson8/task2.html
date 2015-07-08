@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Calculator() {
+            this.calculate =  function(str) {
+                var values = str.split(' ');
+                if(values[1] == '+') return +values[0] + +values[2];
+                if(values[1] == '-') return +values[0] - +values[2];
+            };
+        }
+
+        var calc = new Calculator();
+
+        console.log( calc.calculate('3 + 7') );
+    </script>
+</head>
+<body>
+
+</body>
+</html>

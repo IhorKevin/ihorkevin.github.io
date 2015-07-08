@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function User(fullName) {
+            this.fullName = fullName;
+            var names = fullName.split(' ');
+
+            Object.defineProperty(this, "firstName", {
+                get: function() {
+                    return names[0];
+                },
+                set: function(value) {
+                    names[0] = value;
+                    this.fullName = names.join(' ');
+                }
+            });
+            Object.defineProperty(this, "lastName", {
+                get: function() {
+                    return names[1];
+                },
+                set: function(value) {
+                    names[1] = value;
+                    this.fullName = names.join(' ');
+                }
+            });
+
+        }
+
+        var vasya = new User('Александр Пушкин');
+
+        console.log( vasya.firstName ); // Александр
+        console.log( vasya.lastName );
+        vasya.lastName = 'Толстой';
+        console.log( vasya.fullName );
+    </script>
+</head>
+<body>
+
+</body>
+</html>
