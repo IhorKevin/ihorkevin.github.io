@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        function Article() {
+            this.created = new Date();
+            Article.count++;
+            Article.data = this.created;// ... ваш код ...
+        }
+        Article.count = 0;
+        Article.showStats = function() {
+            return 'Всего: ' + this.count + ', Последняя: ' + this.data;
+        };
+
+        var art1 = new Article();
+        var art2 = new Article();
+        var art3 = new Article();
+        console.log(Article.showStats());
+    </script>
+</head>
+<body>
+
+</body>
+</html>
