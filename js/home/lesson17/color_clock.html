@@ -28,9 +28,11 @@
             var displayH = document.querySelector('.clock__digits_h');
             var displayM = document.querySelector('.clock__digits_m');
             var displayS = document.querySelector('.clock__digits_s');
+
             displayH.innerHTML = hours;
             displayM.innerHTML = minutes;
             displayS.innerHTML = seconds;
+
             displayS.style.backgroundColor = bgColors[+seconds % 10];
             displayM.style.backgroundColor = bgColors[+minutes % 10];
             displayH.style.backgroundColor = bgColors[+hours % 10];
