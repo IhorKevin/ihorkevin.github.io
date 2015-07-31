@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Monotype.com', sans-serif;
+    src: url(Monotype.com.ttf);
+    font-weight: normal;
+}
+.clock {
+    margin: 0 auto;
+    padding: 10px 0;
+    width: 510px;
+    text-align: center;
+    font-size: 72px;
+    font-family: 'Monotype.com', sans-serif;
+    color: #fff;
+    background-color: #bebebf;
+    border: 2px solid #969697;
+    border-radius: 8px;
+    line-height: 120px;
+}
+.clock__digits {
+    display: inline-block;
+    width: 120px;
+    border-radius: 5px;
+}
+.clock__dots {
+    display: inline-block;
+    width: 40px;
+}
+.clock__digits_h {
+    background-color: #005580;
+}
+.clock__digits_m {
+    background-color: #005580;
+}
+.clock__digits_s {
+    background-color: #005580;
+}

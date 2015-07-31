@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Color clock</title>
+    <link rel="stylesheet" href="color_clock.css"/>
+</head>
+<body>
+    <div class="clock">
+        <div class="clock__digits clock__digits_h">00
+        </div><div class="clock__dots">:
+        </div><div class="clock__digits clock__digits_m">00
+        </div><div class="clock__dots">:
+        </div><div class="clock__digits clock__digits_s">00</div>
+    </div>
+    <script>
+        function renderTime() {
+            var hours = new Date().getHours(),
+                minutes = new Date().getMinutes(),
+                seconds = new Date().getSeconds();
+
+            if(hours < 10) hours = '0' + hours;
+            if(minutes < 10) minutes = '0' + minutes;
+            if(seconds < 10) seconds = '0' + seconds;
+
+            var displayH = document.querySelector('.clock__digits_h');
+            var displayM = document.querySelector('.clock__digits_m');
+            var displayS = document.querySelector('.clock__digits_s');
+            displayH.innerHTML = hours;
+            displayM.innerHTML = minutes;
+            displayS.innerHTML = seconds;
+
+            setTimeout('renderTime()', 1000);
+        }
+
+        renderTime();
+    </script>
+</body>
+</html>
