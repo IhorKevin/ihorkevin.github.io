@@ -20,17 +20,15 @@
     display: inline-block;
     width: 120px;
     border-radius: 5px;
+    background-color: #005580;
 }
 .clock__dots {
     display: inline-block;
     width: 40px;
 }
-.clock__digits_h {
-    background-color: #005580;
-}
-.clock__digits_m {
-    background-color: #005580;
-}
-.clock__digits_s {
-    background-color: #005580;
+.page-title {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
 }

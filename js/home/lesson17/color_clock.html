@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="color_clock.css"/>
 </head>
 <body>
+<h1 class="page-title">The color clock</h1>
     <div class="clock">
         <div class="clock__digits clock__digits_h">00
         </div><div class="clock__dots">:
@@ -18,6 +19,7 @@
             var hours = new Date().getHours(),
                 minutes = new Date().getMinutes(),
                 seconds = new Date().getSeconds();
+            var bgColors = ['#2a439f', '#2a6c9f', '#2a959f', '#2a9f82', '#2a9f56', '#2a9f2a', '#4b9f2a', '#829f2a', '#9f6c2a', '#9f2a2a'];
 
             if(hours < 10) hours = '0' + hours;
             if(minutes < 10) minutes = '0' + minutes;
@@ -29,6 +31,10 @@
             displayH.innerHTML = hours;
             displayM.innerHTML = minutes;
             displayS.innerHTML = seconds;
+            displayS.style.backgroundColor = bgColors[+seconds % 10];
+            displayM.style.backgroundColor = bgColors[+minutes % 10];
+            displayH.style.backgroundColor = bgColors[+hours % 10];
+
 
             setTimeout('renderTime()', 1000);
         }
