@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300&subset=latin,cyrillic-ext);
+.one-month
+{
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 18px;
+
+    display: block;
+    overflow: hidden;
+
+    max-width: 280px;
+    margin: auto;
+
+    border-collapse: collapse;
+
+    cursor: default;
+    text-align: center;
+
+    border-radius: 5px;
+    background-color: rgba(219, 78, 44, .16);
+}
+.one-month__head
+{
+    color: #fff;
+    background-color: rgba(205, 77, 55, .79);
+}
+.one-month__name
+{
+    padding: 10px 0;
+}
+.one-month__day
+{
+    box-sizing: border-box;
+    min-width: 40px;
+    padding-bottom: 5px;
+}
+
+.one-month__cell
+{
+    box-sizing: border-box;
+    width: 50px;
+    padding: 5px 10px;
+}
+.one-month__cell:hover
+{
+    background-color: rgba(219, 78, 44, .29);
+}
