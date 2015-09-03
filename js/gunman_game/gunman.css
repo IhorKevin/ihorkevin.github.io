@@ -1,0 +1,166 @@
+@font-face
+{
+    font-family: 'Monotype.com', sans-serif;
+    font-weight: normal;
+
+    src: url(Monotype.com.ttf);
+}
+.game
+{
+    font-family: 'Monotype.com', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+    position: relative;
+
+    overflow: hidden;
+
+    width: 1056px;
+    height: 536px;
+    margin: auto;
+
+    cursor: default;
+
+    color: #fff;
+    background: url(bg.png);
+}
+.game__level
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    padding: 10px;
+}
+.game__status
+{
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    left: 0;
+
+    display: none;
+
+    width: 250px;
+    margin: auto;
+    padding: 5px;
+
+    text-align: center;
+
+    color: #000;
+    border-radius: 7px;
+    background-color: #fff;
+}
+.game__status_show
+{
+    display: inline-block;
+}
+.stats
+{
+    padding: 10px;
+
+    text-align: center;
+}
+.enemy
+{
+    position: absolute;
+    bottom: 100px;
+    left: 1056px;
+
+    width: 130px;
+    height: 256px;
+
+    background: url(gunman.png) 0 0;
+}
+.enemy_move
+{
+    left: 463px;
+
+    transition: left 3s linear;
+}
+.enemy_2
+{
+    height: 288px;
+
+    background-position: 0 -272px;
+}
+.enemy_3
+{
+    width: 104px;
+    height: 320px;
+
+    background-position: 0 -576px;
+}
+.enemy_4
+{
+    width: 128px;
+    height: 256px;
+
+    background-position: 0 -912px;
+}
+.enemy_5
+{
+    width: 128px;
+    height: 276px;
+
+    background-position: 0 -1184px;
+}
+.menu
+{
+    line-height: 536px;
+
+    position: absolute;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    text-align: center;
+    vertical-align: middle;
+
+    background-color: rgba(0,0,0,.7);
+}
+.menu_hide
+{
+    visibility: hidden;
+
+    transition: .6s;
+
+    opacity: 0;
+}
+.menu__inner
+{
+    line-height: 100%;
+
+    display: inline-block;
+}
+.menu__start
+{
+    font-size: 26px;
+
+    display: inline-block;
+
+    padding: 10px 20px;
+
+    cursor: pointer;
+    transition: background.3s;
+
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background-color: transparent;
+}
+.menu__start:hover
+{
+    background-color: rgba(255,255,255,.3);
+}
+.menu__start:active
+{
+    color: #000;
+    background-color: #fff;
+}
+
+.sxf
+{
+    display: none;
+}

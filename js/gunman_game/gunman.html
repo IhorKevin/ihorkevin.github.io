@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Gunman</title>
+    <link rel="stylesheet" href="gunman.css"/>
+
+</head>
+<body>
+    <div class="sxf">
+        <audio src="sfx/intro.m4a" class="sfx__intro"></audio>
+        <audio class="sfx__shot" src="sfx/shot.m4a"></audio>
+        <audio src="sfx/fire.m4a" class="sfx__fire"></audio>
+        <audio src="sfx/foul.m4a" class="sfx__foul"></audio>
+        <audio src="sfx/wait.m4a" class="sfx__wait"></audio>
+        <audio src="sfx/death.m4a" class="sfx__death"></audio>
+        <audio src="sfx/win.m4a" class="sfx__win"></audio>
+    </div>
+    <div class="game">
+        <div class="stats">
+            <span class="stats__range">Gunman 0.00</span> :
+            <span class="stats__timer">0.00 You</span><br/>
+            <span class="stats__score"></span>
+        </div>
+        <div class="enemy"></div>
+        <span class="game__level"></span>
+        <span class="game__status"></span>
+        <div class="menu">
+            <span class="menu__inner">
+                <button class="menu__start">Start new game</button>
+            </span>
+        </div>
+    </div>
+    <script src = "gunman.js"></script>
+</body>
+</html>
