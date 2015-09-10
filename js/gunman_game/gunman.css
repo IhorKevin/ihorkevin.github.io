@@ -24,13 +24,14 @@
     color: #fff;
     background: url(bg.png);
 }
+
 .game__level
 {
     position: absolute;
     bottom: 0;
     left: 0;
 
-    padding: 10px;
+    padding: 15px;
 }
 .game__status
 {
@@ -55,6 +56,45 @@
 {
     display: inline-block;
 }
+.game__next-level
+{
+    font-size: 20px;
+
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    display: inline-block;
+    visibility: hidden;
+
+    padding: 5px 10px;
+
+    cursor: pointer;
+    transition: background .3s, opacity .5s, visibility .5s;
+
+    opacity: 0;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    background-color: transparent;
+}
+.game__next-level:hover
+{
+    background-color: rgba(255,255,255,.3);
+}
+.game__next-level:active
+{
+    color: #000;
+    background-color: #fff;
+}
+.game__next-level_show
+{
+    visibility: visible;
+
+    transition: .5s;
+
+    opacity: 1;
+}
 .stats
 {
     padding: 10px;
@@ -67,7 +107,7 @@
     bottom: 100px;
     left: 1056px;
 
-    width: 130px;
+    width: 128px;
     height: 256px;
 
     background: url(gunman.png) 0 0;
@@ -76,7 +116,82 @@
 {
     left: 463px;
 
-    transition: left 3s linear;
+    transition: left 4s linear;
+}
+
+/* animation and models*/
+
+@keyframes walk1
+{
+    0%
+    {
+        background-position: 0 0;
+    }
+    33%
+    {
+        background-position: -136px 0;
+    }
+    66%
+    {
+        background-position: -268px 0;
+    }
+}
+.enemy_1-walk
+{
+    animation: walk1 1s step-start;
+    animation-iteration-count: infinite;
+}
+.enemy_1-stay
+{
+    background-position: -400px 0;
+}
+.enemy_1-ready
+{
+    background-position: -808px 0;
+}
+@keyframes hit1
+{
+    from
+    {
+        background-position: -944px 0;
+    }
+    20%
+    {
+        background-position: -1080px 0;
+    }
+    to
+    {
+        background-position: -1216px 0;
+    }
+}
+.enemy_1-hit
+{
+    animation: hit1 2s step-start;
+    animation-iteration-count: 1;
+}
+@keyframes down1
+{
+    0%
+    {
+        background-position: -1352px 0;
+    }
+    20%
+    {
+        background-position: -1352px 0;
+    }
+    100%
+    {
+        background-position: -1488px 0;
+    }
+}
+.enemy_1-down
+{
+    animation: down1 2s step-start;
+    animation-iteration-count: 1;
+}
+.enemy_1-dead
+{
+    background-position: -1488px 0;
 }
 .enemy_2
 {
@@ -84,12 +199,123 @@
 
     background-position: 0 -272px;
 }
+@keyframes walk2
+{
+    0%
+    {
+        background-position: 0 -272px;
+    }
+    33%
+    {
+        background-position: -128px -272px;
+    }
+    66%
+    {
+        background-position: -256px -272px;
+    }
+}
+.enemy_2-walk
+{
+    animation: walk2 .8s step-start;
+    animation-iteration-count: infinite;
+}
+.enemy_2-stay
+{
+    background-position: 0 -272px;
+}
+.enemy_2-ready
+{
+    background-position: -384px -272px;
+}
+@keyframes hit2
+{
+    from
+    {
+        background-position: -512px -272px;
+    }
+    20%
+    {
+        background-position: -768px -272px;
+    }
+    to
+    {
+        background-position: -896px -272px;
+    }
+}
+.enemy_2-hit
+{
+    animation: hit2 2s step-start;
+    animation-iteration-count: 1;
+}
+.enemy_2-down
+{
+    background-position: -1024px -272px;
+}
+.enemy_2-dead
+{
+    background-position: -1024px -272px;
+}
 .enemy_3
 {
-    width: 104px;
     height: 320px;
 
     background-position: 0 -576px;
+}
+@keyframes walk3
+{
+    0%
+    {
+        background-position: 0 -576px;
+    }
+    33%
+    {
+        background-position: -128px -576px;
+    }
+    66%
+    {
+        background-position: -256px -576px;
+    }
+}
+.enemy_3-walk
+{
+    animation: walk3 .8s step-start;
+    animation-iteration-count: infinite;
+}
+.enemy_3-stay
+{
+    background-position: 0 -576px;
+}
+.enemy_3-ready
+{
+    background-position: -384px -576px;
+}
+@keyframes hit3
+{
+    from
+    {
+        background-position: -512px -576px;
+    }
+    20%
+    {
+        background-position: -640px -576px;
+    }
+    to
+    {
+        background-position: -768px -576px;
+    }
+}
+.enemy_3-hit
+{
+    animation: hit3 2s step-start;
+    animation-iteration-count: 1;
+}
+.enemy_3-down
+{
+    background-position: -896px -576px;
+}
+.enemy_3-dead
+{
+    background-position: -896px -576px;
 }
 .enemy_4
 {
@@ -98,13 +324,150 @@
 
     background-position: 0 -912px;
 }
+@keyframes walk4
+{
+    0%
+    {
+        background-position: 0 -912px;
+    }
+    33%
+    {
+        background-position: -128px -912px;
+    }
+    66%
+    {
+        background-position: -256px -912px;
+    }
+}
+.enemy_4-walk
+{
+    animation: walk4 .8s step-start;
+    animation-iteration-count: infinite;
+}
+.enemy_4-stay
+{
+    background-position: 0 -912px;
+}
+.enemy_4-ready
+{
+    background-position: -384px -912px;
+}
+@keyframes hit4
+{
+    from
+    {
+        background-position: -512px -912px;
+    }
+    20%
+    {
+        background-position: -640px -912px;
+    }
+    to
+    {
+        background-position: -768px -912px;
+    }
+}
+.enemy_4-hit
+{
+    animation: hit4 2s step-start;
+    animation-iteration-count: 1;
+}
+.enemy_4-down
+{
+    background-position: -896px -912px;
+}
+.enemy_4-dead
+{
+    background-position: -896px -912px;
+}
 .enemy_5
 {
-    width: 128px;
     height: 276px;
 
     background-position: 0 -1184px;
 }
+@keyframes walk5
+{
+    0%
+    {
+        background-position: 0 -1184px;
+    }
+    33%
+    {
+        background-position: -128px -1184px;
+    }
+    66%
+    {
+        background-position: -256px -1184px;
+    }
+}
+.enemy_5-walk
+{
+    animation: walk5 .8s step-start;
+    animation-iteration-count: infinite;
+}
+.enemy_5-stay
+{
+    background-position: 0 -1184px;
+}
+.enemy_5-ready
+{
+    background-position: -384px -1184px;
+}
+@keyframes hit5
+{
+    from
+    {
+        background-position: -512px -1184px;
+    }
+    20%
+    {
+        background-position: -640px -1184px;
+    }
+    to
+    {
+        background-position: -768px -1184px;
+    }
+}
+.enemy_5-hit
+{
+    animation: hit5 2s step-start;
+    animation-iteration-count: 1;
+}
+@keyframes down5
+{
+    0%
+    {
+        background-position: -896px -1184px;
+    }
+    20%
+    {
+        background-position: -896px -1184px;
+    }
+    100%
+    {
+        background-position: -1024px -1184px;
+    }
+}
+.enemy_5-down
+{
+    animation: down5 2s step-start;
+    animation-iteration-count: 1;
+}
+.enemy_5-dead
+{
+    background-position: -1024px -1184px;
+}
+@keyframes pain {
+    0% {box-shadow: inset 0 0 200px rgba(255,0,0,1)}
+    10% {box-shadow: inset 0 0 200px rgba(255,0,0,1)}
+    100% {box-shadow: inset 0 0 200px rgba(255,0,0,0)}
+}
+.game_hit {
+    animation: 3s pain linear;
+}
+/* end animation and models */
+
 .menu
 {
     line-height: 536px;
@@ -119,6 +482,11 @@
     vertical-align: middle;
 
     background-color: rgba(0,0,0,.7);
+    visibility: visible;
+
+    transition: .6s;
+
+    opacity: 1;
 }
 .menu_hide
 {
@@ -158,9 +526,4 @@
 {
     color: #000;
     background-color: #fff;
-}
-
-.sxf
-{
-    display: none;
 }
