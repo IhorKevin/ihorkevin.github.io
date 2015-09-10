@@ -229,7 +229,7 @@
     var sfxWait = new Audio('sfx/wait.m4a');
     var sfxWin = new Audio('sfx/win.m4a');
 
-    // Custom Sounds
+     //Custom Sounds
 
     //var sfxDeath = new Audio('sfx/death.mp3');
     //var sfxFire = new Audio('sfx/fire.m4a');
