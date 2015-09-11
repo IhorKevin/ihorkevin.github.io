@@ -1,9 +1,10 @@
 @font-face
 {
-    font-family: 'MyFont', monospace;
+    font-family: 'MyFont';
     font-weight: normal;
 
-    src: url(Monotype_converted.eot);
+    src: url(Monotype.com.ttf),
+        url(Monotype_converted.eot);
 }
 .game
 {
