@@ -59,6 +59,7 @@
 .game__next-level
 {
     font-size: 20px;
+    font-family: inherit;
 
     position: absolute;
     right: 10px;
