@@ -1,13 +1,13 @@
 @font-face
 {
-    font-family: 'Monotype.com', sans-serif;
+    font-family: 'Monotype.com', monospace;
     font-weight: normal;
 
     src: url(Monotype.com.ttf);
 }
 .game
 {
-    font-family: 'Monotype.com', sans-serif;
+    font-family: 'Monotype.com', monospace;
     font-size: 20px;
     font-weight: bold;
 
