@@ -1,13 +1,13 @@
 @font-face
 {
-    font-family: 'Monotype.com', monospace;
+    font-family: 'MyFont', monospace;
     font-weight: normal;
 
-    src: url(Monotype.com.ttf);
+    src: url(Monotype_converted.eot);
 }
 .game
 {
-    font-family: 'Monotype.com', monospace;
+    font-family: 'MyFont', monospace;
     font-size: 20px;
     font-weight: bold;
 
