@@ -3,7 +3,7 @@
     font-family: 'Monotype.com', monospace;
     font-weight: normal;
 
-    src: url(monotype.com.ttf);
+    src: url(Monotype.com.ttf);
 }
 .game
 {
@@ -505,6 +505,7 @@
 .menu__start
 {
     font-size: 26px;
+    font-family: 'Monotype.com', monospace;
 
     display: inline-block;
 
