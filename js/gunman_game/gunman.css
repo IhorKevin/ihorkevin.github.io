@@ -506,7 +506,7 @@
 .menu__start
 {
     font-size: 26px;
-    font-family: 'Monotype.com', monospace;
+    font-family: inherit;
 
     display: inline-block;
 
