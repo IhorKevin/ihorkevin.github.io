@@ -221,22 +221,22 @@
 
     // Original sounds
 
-    var sfxDeath = new Audio('sfx/death.m4a');
-    var sfxFire = new Audio('sfx/fire.m4a');
-    var sfxFault = new Audio('sfx/foul.m4a');
-    var sfxIntro = new Audio('sfx/intro.m4a');
-    var sfxShot = new Audio('sfx/shot.m4a');
-    var sfxWait = new Audio('sfx/wait.m4a');
-    var sfxWin = new Audio('sfx/win.m4a');
+    //var sfxDeath = new Audio('sfx/death.m4a');
+    //var sfxFire = new Audio('sfx/fire.m4a');
+    //var sfxFault = new Audio('sfx/foul.m4a');
+    //var sfxIntro = new Audio('sfx/intro.m4a');
+    //var sfxShot = new Audio('sfx/shot.m4a');
+    //var sfxWait = new Audio('sfx/wait.m4a');
+    //var sfxWin = new Audio('sfx/win.m4a');
 
      //Custom Sounds
 
-    //var sfxDeath = new Audio('sfx/death.mp3');
-    //var sfxFire = new Audio('sfx/fire.m4a');
-    //var sfxFault = new Audio('sfx/foul.mp3');
-    //var sfxIntro = new Audio('sfx/intro.mp3');
-    //var sfxShot = new Audio('sfx/shot.mp3');
-    //var sfxWait = new Audio('sfx/wait.mp3');
-    //var sfxWin = new Audio('sfx/win.mp3');
+    var sfxDeath = new Audio('sfx/death.mp3');
+    var sfxFire = new Audio('sfx/fire.m4a');
+    var sfxFault = new Audio('sfx/foul.mp3');
+    var sfxIntro = new Audio('sfx/intro.mp3');
+    var sfxShot = new Audio('sfx/shot.mp3');
+    var sfxWait = new Audio('sfx/wait.mp3');
+    var sfxWin = new Audio('sfx/win.mp3');
 
 })();
