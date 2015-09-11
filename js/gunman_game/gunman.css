@@ -466,6 +466,7 @@
 .game_hit {
     animation: 3s pain linear;
 }
+
 /* end animation and models */
 
 .menu
@@ -512,7 +513,7 @@
     padding: 10px 20px;
 
     cursor: pointer;
-    transition: background.3s;
+    transition: background .3s;
 
     color: #fff;
     border: 1px solid #fff;
