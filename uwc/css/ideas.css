@@ -1,0 +1,160 @@
+.ideas
+{
+    font-family: 'Montserrat', Arial, 'Helvetica Neue', sans-serif;
+    font-size: 22px;
+
+    text-align: center;
+}
+.ideas__wrap
+{
+    max-width: 940px;
+    margin: auto;
+}
+.ideas__title
+{
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 94px 0 32px 0;
+
+    color: #333;
+}
+.ideas__list
+{
+    overflow: hidden;
+
+    padding: 0;
+
+    list-style: none;
+}
+.ideas__item
+{
+    float: left;
+    overflow: hidden;
+
+    margin: 0 20px 20px 0;
+
+    border-radius: 4px;
+    background-size: cover;
+}
+
+.ideas__item:nth-child(1)
+{
+    background: url(../images/ideas__bg1.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(2)
+{
+    background: url(../images/ideas__bg2.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(3)
+{
+    margin-right: 0;
+
+    background: url(../images/ideas__bg3.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(4)
+{
+    background: url(../images/ideas__bg4.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(5)
+{
+    margin-right: 0;
+
+    background: url(../images/ideas__bg5.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(6)
+{
+    background: url(../images/ideas__bg6.jpg) 50% 50% no-repeat;
+}
+.ideas__item:nth-child(7)
+{
+    margin-right: 0;
+
+    background: url(../images/ideas__bg7.jpg) 50% 50% no-repeat;
+}
+.ideas__link
+{
+    line-height: 310px;
+
+    display: block;
+
+    width: 300px;
+    height: 310px;
+
+    transition: .3s;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #fff;
+    background-color: rgba(0,0,0,.3);
+}
+.ideas__link_double
+{
+    width: 620px;
+}
+.ideas__link:hover
+{
+    transition: .3s;
+    transform: scale(1.1, 1.1);
+
+    background-color: rgba(0,0,0,.6);
+}
+.ideas__inner
+{
+    font-weight: bold;
+    line-height: 1.2;
+
+    display: inline-block;
+
+    vertical-align: middle;
+}
+@media all and (max-width: 939px)
+{
+    .ideas__wrap
+    {
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 0 10px;
+    }
+    .ideas__link
+    {
+        width: 236px;
+    }
+    .ideas__link_double
+    {
+        width: 492px;
+    }
+}
+@media all and (max-width: 767px)
+{
+    .ideas__wrap
+    {
+        width: 320px;
+        padding: 0 10px;
+    }
+    .ideas__list
+    {
+        margin: 0 auto;
+    }
+    .ideas__item
+    {
+        margin: 0 0 10px 0;
+    }
+    .ideas__item:last-child
+    {
+        margin-bottom: 0;
+    }
+    .ideas__link,
+    .ideas__link_double
+    {
+        line-height: 120px;
+
+        width: 300px;
+        height: 120px;
+        margin-right: 0;
+    }
+    .ideas__title
+    {
+        margin: 36px 0 12px 0;
+    }
+}

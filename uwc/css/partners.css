@@ -1,0 +1,155 @@
+.partners
+{
+    font-family: 'Montserrat', Arial, 'Helvetica Neue', sans-serif;
+
+    width: 100%;
+
+    text-align: center;
+}
+.partners__wrap
+{
+    max-width: 940px;
+    margin: auto;
+}
+.partners__title
+{
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 94px 0 32px 0;
+
+    color: #333;
+    cursor: default;
+}
+.partners__list
+{
+    overflow: hidden;
+
+    margin: 30px 0 23px 0;
+    padding: 0;
+
+    list-style: none;
+}
+.partners__item
+{
+    float: left;
+
+    margin-right: 20px;
+}
+.partners__item:last-child
+{
+    margin-right: 0;
+}
+.partners__button
+{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+
+    display: inline-block;
+
+    box-sizing: border-box;
+    min-width: 192px;
+    height: 40px;
+
+    transition: .3s;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #ff4e50;
+    border: 2px solid;
+    border-radius: 20px;
+    background-color: transparent;
+}
+.partners__button:hover
+{
+    transform: scale(1.1, 1.1);
+}
+.partner
+{
+    width: 220px;
+}
+.partner__photo
+{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+}
+.partner__name
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 14px 0 8px 0;
+
+    color: #333;
+    cursor: default;
+}
+.partner__text
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+    margin: 13px 0 13px 0;
+
+    color: #666;
+}
+@media all and (max-width: 939px)
+{
+    .partners__wrap
+    {
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 0 10px;
+    }
+    .partner
+    {
+        width: 236px;
+    }
+    .partners__list
+    {
+        width: 492px;
+        margin: 30px auto 23px auto;
+    }
+    .partners__item:nth-child(2n)
+    {
+        margin-right: 0;
+    }
+}
+@media all and (max-width: 767px)
+{
+    .partners__wrap
+    {
+        max-width: 320px;
+        padding: 0 10px;
+    }
+    .partners__list
+    {
+        width: 300px;
+        margin: 14px 0 0 0;
+    }
+    .partners__item
+    {
+        float: none;
+
+        margin: 0 auto;
+    }
+    .partners__item:nth-child(2n)
+    {
+        margin-right: auto;
+    }
+    .partners__title
+    {
+        margin: 34px 0 14px 0;
+    }
+    .partner
+    {
+        margin-bottom: 25px;
+    }
+    .partners__button
+    {
+        width: 280px;
+    }
+}

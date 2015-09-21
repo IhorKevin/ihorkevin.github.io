@@ -1,0 +1,115 @@
+.discover
+{
+    font-family: 'Montserrat', Arial, 'Helvetica Neue', sans-serif;
+
+    margin-bottom: 100px;
+
+    text-align: center;
+}
+.discover__wrap
+{
+    max-width: 940px;
+    margin: auto;
+}
+.discover__title
+{
+    font-size: 22px;
+    font-weight: bold;
+
+    margin: 94px 0 32px 0;
+
+    color: #333;
+    cursor: default;
+}
+.discover__intro
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+    margin: 35px 0;
+
+    color: #333;
+}
+.discover__input
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+
+    box-sizing: border-box;
+    min-width: 240px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 0 14px;
+
+    color: #999;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline-style: none;
+    box-shadow: 0 1px #eee;
+}
+.discover__button
+{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 40px;
+
+    display: inline-block;
+
+    min-width: 160px;
+    height: 40px;
+
+    cursor: pointer;
+    transition: .3s;
+    vertical-align: middle;
+    text-decoration: none;
+
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    background-color: #ff4e50;
+}
+.discover__button:hover
+{
+    transition: .3s;
+    transform: scale(1.1, 1.1);
+}
+@media all and (max-width: 939px)
+{
+    .discover__wrap
+    {
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 0 10px;
+    }
+}
+@media all and (max-width: 767px)
+{
+    .discover
+    {
+        margin-bottom: 40px;
+    }
+    .discover__wrap
+    {
+        width: 320px;
+        padding: 0 10px;
+    }
+    .discover__title
+    {
+        margin: 36px 0 10px 0;
+    }
+    .discover__intro
+    {
+        margin: 10px 0 15px 0;
+    }
+    .discover__input
+    {
+        width: 280px;
+        margin: 0 0 10px 0;
+    }
+    .discover__button
+    {
+        width: 280px;
+    }
+}

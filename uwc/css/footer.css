@@ -1,0 +1,179 @@
+.footer
+{
+    font-family: 'Montserrat', sans-serif;
+
+    border-top: 4px solid #ff4e50;
+}
+.footer__wrap
+{
+    overflow: hidden;
+
+    max-width: 940px;
+    margin: auto;
+    padding: 36px 0;
+}
+.footer__logo
+{
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+
+    float: left;
+
+    width: 220px;
+    margin-right: 20px;
+
+    cursor: default;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+
+    color: #ff4e50;
+}
+.footer__item
+{
+    float: left;
+
+    width: 140px;
+    margin-right: 20px;
+}
+.footer__title
+{
+    font-size: 14px;
+    font-weight: bold;
+
+    margin: 0 0 13px 0;
+
+    color: #333;
+    cursor: default;
+}
+.footer__author
+{
+    float: right;
+
+    max-width: 220px;
+}
+.list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+.list__item
+{
+    line-height: 24px;
+}
+.list__link
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+
+    text-decoration: none;
+
+    color: #666;
+}
+.list__link:hover
+{
+    text-decoration: underline;
+}
+.author
+{
+    text-align: right;
+}
+.author__by
+{
+    font-size: 10px;
+    font-weight: bold;
+
+    letter-spacing: .1em;
+    text-transform: uppercase;
+
+    color: #ccc;
+}
+.author__logo
+{
+    display: block;
+
+    width: 110px;
+    margin-top: 8px;
+}
+@media all and (max-width: 939px)
+{
+    .footer__wrap
+    {
+        box-sizing: border-box;
+        max-width: 768px;
+        padding: 36px 10px;
+    }
+    .footer__logo
+    {
+        width: 236px;
+        padding-left: 30px;
+    }
+    .footer__item
+    {
+        width: 152px;
+    }
+    .footer__item:nth-child(3)
+    {
+        margin-right: 0;
+    }
+    .footer__author
+    {
+        padding-right: 30px;
+    }
+}
+@media all and (max-width: 767px)
+{
+    .footer__wrap
+    {
+        width: 320px;
+        padding: 16px 10px;
+
+        text-align: center;
+    }
+    .footer__logo,
+    .footer__item,
+    .footer__author
+    {
+        float: none;
+
+        width: 100%;
+        max-width: 300px;
+        margin-right: 0;
+        padding: 0;
+    }
+    .footer__title
+    {
+        margin: 11px 0 0 0;
+    }
+    .author
+    {
+        margin-top: 6px;
+    }
+    .list
+    {
+        overflow: hidden;
+
+        margin: auto;
+    }
+    .list__item
+    {
+        display: inline-block;
+    }
+    .list__link
+    {
+        display: block;
+
+        margin: auto 5px;
+    }
+    .author
+    {
+        display: inline-block;
+
+        max-width: 110px;
+
+        text-align: center;
+    }
+}
