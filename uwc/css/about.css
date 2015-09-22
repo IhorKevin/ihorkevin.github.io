@@ -104,6 +104,108 @@
     border-radius: 10px;
     background-color: #ff4e50;
 }
+.step__radio {
+    display: none;
+}
+.step__slide {
+    display: none;
+}
+.step__controls {
+    position: absolute;
+    z-index: 2;
+    top: 154px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 15px;
+}
+.step__arrow {
+    background-image: url(../images/arrow-left.svg);
+    background-size: contain;
+
+    width: 30px;
+    height: 55px;
+    display: none;
+
+    cursor: pointer;
+    transition: .3s;
+
+    opacity: .5;
+}
+.step__arrow:hover {
+    opacity: 1;
+}
+
+/*slider engine*/
+
+#slide11:checked ~ .step__content .step__slide:nth-of-type(1),
+#slide12:checked ~ .step__content .step__slide:nth-of-type(2),
+#slide13:checked ~ .step__content .step__slide:nth-of-type(3){
+    display: block;
+}
+#slide11:checked ~ .step__controls .step__arrow:nth-child(2),
+#slide12:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide13:checked ~ .step__controls .step__arrow:nth-child(1){
+    background: url(../images/arrow-right.svg) no-repeat;
+    background-size: contain;
+    float: right;
+    display: block;
+}
+#slide11:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide12:checked ~ .step__controls .step__arrow:nth-child(1),
+#slide13:checked ~ .step__controls .step__arrow:nth-child(2){
+    background: url(../images/arrow-left.svg) no-repeat;
+    background-size: contain;
+
+    float: left;
+    display: block;
+}
+
+#slide21:checked ~ .step__content .step__slide:nth-of-type(1),
+#slide22:checked ~ .step__content .step__slide:nth-of-type(2),
+#slide23:checked ~ .step__content .step__slide:nth-of-type(3){
+    display: block;
+}
+#slide21:checked ~ .step__controls .step__arrow:nth-child(2),
+#slide22:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide23:checked ~ .step__controls .step__arrow:nth-child(1){
+    background: url(../images/arrow-right.svg) no-repeat;
+    background-size: contain;
+    float: right;
+    display: block;
+}
+#slide21:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide22:checked ~ .step__controls .step__arrow:nth-child(1),
+#slide23:checked ~ .step__controls .step__arrow:nth-child(2){
+    background: url(../images/arrow-left.svg) no-repeat;
+    background-size: contain;
+
+    float: left;
+    display: block;
+}
+
+#slide31:checked ~ .step__content .step__slide:nth-of-type(1),
+#slide32:checked ~ .step__content .step__slide:nth-of-type(2),
+#slide33:checked ~ .step__content .step__slide:nth-of-type(3){
+    display: block;
+}
+#slide31:checked ~ .step__controls .step__arrow:nth-child(2),
+#slide32:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide33:checked ~ .step__controls .step__arrow:nth-child(1){
+    background: url(../images/arrow-right.svg) no-repeat;
+    background-size: contain;
+    float: right;
+    display: block;
+}
+#slide31:checked ~ .step__controls .step__arrow:nth-child(3),
+#slide32:checked ~ .step__controls .step__arrow:nth-child(1),
+#slide33:checked ~ .step__controls .step__arrow:nth-child(2){
+    background: url(../images/arrow-left.svg) no-repeat;
+    background-size: contain;
+
+    float: left;
+    display: block;
+}
+
 .step__title
 {
     font-size: 24px;
@@ -124,41 +226,6 @@
 
     color: #ccc;
 }
-.step__prev
-{
-    position: absolute;
-    z-index: 2;
-    top: 154px;
-    left: 15px;
-
-    display: inline-block;
-
-    cursor: pointer;
-    transition: .3s;
-
-    opacity: .5;
-}
-.step__next
-{
-    position: absolute;
-    z-index: 2;
-    top: 154px;
-    right: 15px;
-
-    display: block;
-
-    transition: .3s;
-    transform: rotate(180deg);
-
-    opacity: .5;
-}
-.step__prev:hover,
-.step__next:hover
-{
-    transition: .3s;
-
-    opacity: .9;
-}
 @media screen and (max-width: 939px)
 {
     .about__wrap
@@ -171,11 +238,10 @@
     {
         width: 236px;
     }
-    .step__next,
-    .step__prev
-    {
+    .step__controls {
         top: 40px;
     }
+
 }
 @media all and (max-width: 767px)
 {
@@ -198,9 +264,11 @@
     {
         margin-bottom: 0;
     }
-    .step__prev,
-    .step__next
-    {
+    .step__controls {
         top: 15px;
+    }
+    .step__arrow {
+        height: 40px;
+        width: 23px;
     }
 }
