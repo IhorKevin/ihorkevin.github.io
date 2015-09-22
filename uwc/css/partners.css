@@ -71,6 +71,8 @@
 }
 .partner
 {
+    position: relative;
+
     width: 220px;
 }
 .partner__photo
@@ -79,6 +81,46 @@
     height: 120px;
 
     border-radius: 50%;
+}
+.partner:after
+{
+    line-height: 36px;
+
+    position: absolute;
+    top: 85px;
+    left: 134px;
+
+    display: block;
+
+    width: 32px;
+    height: 32px;
+
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+.partner_1:after
+{
+    content: url(../images/icon-tv.svg);
+
+    background-color: #ff4e50;
+}
+.partner_2:after
+{
+    content: url(../images/icon-coffee.svg);
+
+    background-color: #1cd7ad;
+}
+.partner_3:after
+{
+    content: url(../images/icon-bottle.svg);
+
+    background-color: #ffa507;
+}
+.partner_4:after
+{
+    content: url(../images/icon-flight.svg);
+
+    background-color: #4e73db;
 }
 .partner__name
 {

@@ -13,7 +13,7 @@
     font-size: 22px;
     font-weight: bold;
 
-    margin: 97px 0 40px 0;
+    margin: 94px 0 34px 0;
 
     cursor: default;
     text-align: center;
@@ -120,7 +120,7 @@
 
     box-sizing: border-box;
     width: 100%;
-    padding: 0 15px;
+    padding: 0 20px;
 }
 .step__arrow
 {
