@@ -18,8 +18,9 @@
 
     margin: 94px 0 32px 0;
 
-    color: #333;
     cursor: default;
+
+    color: #333;
 }
 .discover__intro
 {
@@ -73,10 +74,10 @@
 .discover__button:hover
 {
     transition: .3s;
-    transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
+       -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
 }
 @media all and (max-width: 939px)
 {

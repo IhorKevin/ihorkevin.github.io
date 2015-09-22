@@ -43,8 +43,9 @@
 
     margin: 0 0 13px 0;
 
-    color: #333;
     cursor: default;
+
+    color: #333;
 }
 .footer__author
 {

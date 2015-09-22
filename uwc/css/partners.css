@@ -18,8 +18,9 @@
 
     margin: 94px 0 32px 0;
 
-    color: #333;
     cursor: default;
+
+    color: #333;
 }
 .partners__list
 {
@@ -63,10 +64,10 @@
 }
 .partners__button:hover
 {
-    transform: scale(1.1, 1.1);
     -webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -ms-transform: scale(1.1, 1.1);
+       -moz-transform: scale(1.1, 1.1);
+        -ms-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
 }
 .partner
 {
@@ -86,8 +87,9 @@
 
     margin: 14px 0 8px 0;
 
-    color: #333;
     cursor: default;
+
+    color: #333;
 }
 .partner__text
 {
