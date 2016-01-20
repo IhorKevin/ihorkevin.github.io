@@ -1,0 +1,51 @@
+@media (max-width: $normal-screen)
+    .section__post
+        width 100%
+        max-width 800px
+
+@media (max-width: $tablet-screen)
+    .footer
+        flex-flow wrap
+
+
+@media (max-width: $mobile-screen)
+    html
+        font-size 14px
+    $online-player-height = 5rem
+
+    .page__header
+        height 0
+
+    .player-wrap
+        fixed bottom left right
+        z-index 9999
+        width 100%
+        max-height $online-player-height
+        box-shadow 0 0 1rem $shadow-color
+        margin-bottom 0
+
+    .menu__button
+        display block
+        fixed right top
+        z-index 11
+
+    .menu__inner
+        fixed right -100% top bottom
+        width 100%
+        display block
+        overflow hidden
+        padding 3.4rem 0 0 0
+        box-sizing border-box
+        z-index 10
+
+    .menu__link
+        display block
+        text-align center
+
+    .online-player
+        width 100%
+        height $online-player-height
+
+    .online-player__button
+        min-width $online-player-height
+        height $online-player-height

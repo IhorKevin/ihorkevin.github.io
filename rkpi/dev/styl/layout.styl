@@ -1,0 +1,371 @@
+html
+    font-size 16px
+    font-family Verdana, sans-serif
+
+.page
+    background $bg-color
+    min-width 320px
+
+.page__wrap
+    max-width 1600px
+    margin auto
+
+.page__header
+    position relative
+    height: 100vh
+    width 100%
+    //background url(../img/fon.gif) 50% 50% no-repeat $light-color
+    background $light-color
+    background-size cover
+
+.page__footer
+    background darken($bg-color, 40%)
+    padding 2rem 0
+
+
+
+.player-wrap
+    absolute top bottom left right
+    margin auto
+    max-width 1200px
+    max-height $online-player-height
+    box-shadow 0 0 30px $shadow-color
+
+.menu
+    background $bg-color
+
+.menu__inner
+    display flex
+    max-width 1200px
+    margin 0 auto
+    justify-content flex-end
+    align-items: center
+    height 100%
+
+.menu__link
+    font-family "GothamPro", sans-serif
+    font-size 1.4rem
+    text-transform uppercase
+    font-weight: bold
+    padding 1rem
+    text-decoration none
+    color lighten($dark-color, 30%)
+    $transition-time = .2s
+    transition $transition-time
+
+
+    &:hover
+        color $dark-color
+        background lighten($bg-color, 80%)
+        box-shadow 0 0 1rem $shadow-color
+        transition $transition-time
+
+    &:active
+        background $base-color
+        color $light-color
+        transition 0s
+
+
+.menu__link_special
+    color $base-color
+    &:hover
+        color $base-color
+    &:active
+        background $base-color
+        color $light-color
+
+.menu__button
+    display none
+    float right
+    width $player-height
+    background transparent
+    border 0
+    padding 1rem
+    cursor pointer
+
+.menu__dash
+    display block
+    width 2.4rem
+    height 5px
+    margin 0 0 5px 0
+    background $dark-color
+
+//_____________________ BIG ONLINE PLAYER
+
+.online-player
+    display flex
+    flex-wrap nowrap
+    align-items stretch
+    height $online-player-height
+    background $light-color
+
+.online-player__button
+    min-width $online-player-height
+    height $online-player-height
+    padding 0
+    background $base-color
+    border none
+    cursor pointer
+
+.online-player__info
+    padding 0 2rem
+    box-sizing border-box
+    overflow hidden
+
+.online-player__song-wrap
+    display flex
+    max-width 100%
+    height $online-player-height
+    overflow hidden
+    align-items: center
+
+.online-player__song
+    font-family "GothamPro", sans-serif
+    white-space nowrap
+    font-weight bold
+    font-size 2.8rem
+    upcase()
+
+// ________________________
+
+.intro-button
+    absolute left right bottom 4rem
+    width 280px
+    margin 0 auto
+    padding (($player-height - 1.4rem)/2) 1rem
+    background $base-color
+    font-family "Gotham Pro", sans-serif
+    font-weight bold
+    font-size 1.4rem
+    text-align center
+    text-decoration none
+    text-transform uppercase
+    color $light-color
+    box-shadow 0 5px 1.4rem rgba($dark-color, 20%)
+    transition .2s
+
+    &:after
+        content ''
+        absolute left top $player-height
+        width 0
+        height 0
+        triangle(down, 151px, $base-color)
+        border-top-width 16px
+
+
+    &:hover
+        box-shadow 0 5px 1.4rem rgba($dark-color, 30%)
+        transition .2s
+
+.section
+    max-width 1600px
+    margin 0 auto
+    padding 2rem 1rem
+    box-sizing border-box
+    background lighten($bg-color, 50%)
+
+.section__title
+    margin 0 auto 2rem auto
+    font-family "GothamPro", sans-serif
+    font-size 2rem
+    font-weight: bold
+    text-transform uppercase
+    text-align center
+
+.section__text
+    margin 0 0 1em 0
+    font-size 1.2rem
+    color $text-color
+
+.section__text_wide
+    min-width 100%
+    text-align center
+
+.section__img
+    height auto
+    max-height 480px
+    padding 0 0 1rem 0
+
+.section__inner
+    display flex
+    flex-wrap wrap
+    justify-content space-around
+    overflow hidden
+
+.section__post
+    width 45%
+    max-width 640px
+    margin-bottom 2rem
+
+.section__btn
+    display block
+    width 100%
+    height 4rem
+    padding 0
+    background-color darken($bg-color, 4%)
+    color lighten($text-color,50%)
+    border none
+    font-size 1.5rem
+    text-align center
+    text-transform uppercase
+    font-family "GothamPro", sans-serif
+    cursor pointer
+    outline none
+    opacity .6
+    transition .2s
+
+    &:hover
+        opacity 1
+        transition .2s
+
+    &:active
+        background $base-color
+        color $light-color
+        transition 0s
+
+//______________________ POST
+
+.post
+    padding 0 0 1rem 0
+    position relative
+
+.post__img
+    width 100%
+    height auto
+
+.post__title
+    font-family "GothamPro", sans-serif
+    font-size 1.6rem
+    font-weight: bold
+    margin 1rem 0 .8rem 0
+    color $base-color
+
+.post__text
+    margin .8rem 0 1rem 0
+    color $text-color
+    line-height 1.4rem
+
+.post__attributes
+    vertical-align baseline
+    font-size .8rem
+    color lighten($text-color, 50%)
+    font-weight 300
+
+.post__player
+    height $player-height
+
+
+//__________________________
+
+.player
+    display flex
+    height $player-height
+    font-family "GothamPro", sans-serif
+    font-size 1rem
+    align-items center
+
+    &:hover .player__info_closed
+        width 100%
+
+.player__btn
+    position relative
+    width 20%
+    min-width $player-height
+    height $player-height
+    padding 0
+    border none
+    background $base-color
+
+    font-family inherit
+    font-size inherit
+    font-weight bold
+
+.player__info
+    position relative
+    width 100%
+    height 100%
+    box-sizing border-box
+    overflow hidden
+    background $light-color
+    text-align right
+    line-height $player-height
+    font-weight bold
+
+
+.player__info_closed
+    width 0%
+    transition 1s
+
+.player__cur-time
+    vertical-align middle
+
+.player__full-time
+    padding-right 1rem
+
+
+//____________________ FOOOTER
+
+.footer
+    display flex
+    justify-content space-between
+
+.footer__group
+    padding 0 2rem
+    margin 0 0 2rem 0
+
+.footer__title
+    margin 0 0 1rem 0
+    font-family: "Gotham Pro", sans-serif
+    font-size 1.5rem
+    font-weight: bold
+    color $dark-color
+
+.footer__list
+    margin 1rem 0
+
+.footer__list_ordered
+    list-style decimal inside
+
+.footer__list-item
+    line-height 1.5
+
+.footer__link
+    text-decoration underline
+    color inherit
+
+.footer__search
+    overflow hidden
+    background rgba($light-color, 10%)
+    border-bottom 3px solid rgba($dark-color,60%)
+
+    &:hover
+        background rgba($light-color, 15%)
+        border-bottom 3px solid rgba($dark-color,90%)
+
+//____________________
+
+
+.search__input
+    float: left
+    height $search-height
+    width calc(100% - $search-height)
+    background transparent
+    padding 0
+    border 0
+
+    &:focus
+        background $bg-color
+
+.search__submit
+    float right
+    height $search-height
+    width $search-height
+    padding 0
+    border 0
+    background transparent
+    cursor pointer
+
+    &:active
+        background $base-color
+        color $light-color
+
