@@ -1,0 +1,100 @@
+@import "axis"
+
+global-reset()
+
+$base-color = #fff343
+
+html
+    font-family: 'Arimo', "Open Sans", Arial, sans-serif;
+    font-size 16px
+
+.page
+    position relative
+    width 100%
+    height 100vh
+    min-height 550px
+    max-height 1280px
+    background white
+    font-family: 'Arimo', "Open Sans", Arial, sans-serif;
+
+.logo
+    absolute top -20%  bottom left right
+    width 100%
+    max-width 600px
+    max-height image-size('../img/logo-wonder-production.png')[1]
+    margin auto
+    animation popup-logo 1s $ease-out-back
+
+@keyframes popup-logo
+    0%
+        transform translateY(50%)
+        opacity 0
+    100%
+        transform translateY(0%)
+        opacity 1
+
+.download
+    absolute left right bottom top 50%
+    margin auto
+    padding .2rem 0
+    max-width 360px
+    height 1.5rem
+    text-align center
+    uppercase()
+    font-size 1.5rem
+    font-weight: bold
+    letter-spacing 0.05em
+    color black
+    background darken(white, 5%)
+    text-decoration none
+    transition .3s
+    animation popup-download 1s ease-out
+
+    &:hover
+        background darken(white, 10%)
+        transition .3s
+
+    &:active
+        background $base-color
+        transition 0s
+
+@keyframes popup-download
+    0%
+        transform translateY(150%)
+        opacity 0
+    10%
+        transform translateY(150%)
+        opacity 0
+    100%
+        transform translateY(0%)
+        opacity 1
+
+.contacts
+    absolute left right bottom 5%
+    max-width 300px
+    margin 0 auto
+    padding 1rem
+    box-sizing border-box
+    text-align center
+
+
+.contacts__item
+    padding .2rem 1rem
+    margin .2rem
+    font-size 1.2rem
+    text-decoration none
+    color black
+    text-align center
+    display: inline-block
+    transition .3s
+    animation popup-download 1s ease-out
+
+    &:hover
+        background darken(white, 10%)
+        transition .3s
+
+    &:active
+        background $base-color
+        transition 0s
+
+@import "adaptive.styl"
