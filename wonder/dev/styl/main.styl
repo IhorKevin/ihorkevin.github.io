@@ -16,6 +16,7 @@ html
     max-height 1280px
     background white
     font-family: 'Arimo', "Open Sans", Arial, sans-serif;
+    overflow-y hidden
 
 .logo
     absolute top -20%  bottom left right
@@ -60,14 +61,15 @@ html
 
 @keyframes popup-download
     0%
-        transform translateY(150%)
+        transform translateY(100%)
         opacity 0
     10%
-        transform translateY(150%)
+        transform translateY(100%)
         opacity 0
     100%
         transform translateY(0%)
         opacity 1
+
 
 .contacts
     absolute left right bottom 5%
