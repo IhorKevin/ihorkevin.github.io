@@ -10,7 +10,14 @@ var gulp = require('gulp'),
 
 gulp.task('html', function () {
     gulp.src('dev/*.html')
-        .pipe(htmlmin())
+        .pipe(htmlmin({
+            removeComments: true,
+            collapseWhitespace: true,
+            preserveLineBreaks: true,
+            removeTagWhitespace: true,
+            removeScriptTypeAttributes: true,
+            removeStyleLinkTypeAttributes: true
+        }))
         .pipe(gulp.dest('build'));
 });
 
