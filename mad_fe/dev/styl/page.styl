@@ -1,8 +1,18 @@
 .page
+    min-width 960px
     background-color $bg-color
+    background url(../img/bg-circle.png) 0 0 repeat, $bg-color
     font-family Roboto, sans-serif
     font-size 16px
-    min-width 960px
+    animation 5s mad-bg linear infinite alternate running
+
+@keyframes mad-bg {
+    0% { background-color: #f1c40f; }
+    32% { background-color: $special-color; }
+    55% { background-color: $base-color; }
+    76% { background-color: #16a085; }
+    100% { background-color: $bg-color; }
+}
 
 .page__header
     position fixed
@@ -51,3 +61,10 @@ big-dot($size, $position)
 
 .page__section
     box-sizing border-box
+
+.page__footer
+    line-height 28px
+    background-color black
+    font-size 10px
+    font-weight 200
+    color white
