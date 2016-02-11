@@ -1,0 +1,53 @@
+.page
+    background-color $bg-color
+    font-family Roboto, sans-serif
+    font-size 16px
+    min-width 960px
+
+.page__header
+    position fixed
+    z-index 4
+    min-height 80px
+    min-width 960px
+    width 100%
+    background-color #0f0f0f
+    background url(../img/bg-header-sample.png) 0 0 repeat
+
+    &:after
+        absolute left right
+        bottom -(image-size("../img/header-arrow.png")[1])
+        margin auto
+        content ''
+        width image-size("../img/header-arrow.png")[0]
+        height image-size("../img/header-arrow.png")[1]
+        background url(../img/header-arrow.png) 0 0 no-repeat
+
+
+.page__wrap
+    width 960px
+    margin 0 auto
+
+big-dot($size, $position)
+    content: ''
+    absolute left right $position (-($size/2))
+    size($size, $size)
+    margin auto
+    border 7px solid white
+    border-radius 50%
+    box-sizing border-box
+    background url(../img/bg-header-sample.png) 0 0 repeat, #0f0f0f
+
+.page__separator
+    position relative
+    height 244px
+    line-height 244px
+    background url(../img/bg-line.png) 50% 50% no-repeat, white
+    text-align center
+
+    &:before
+        big-dot(50px, top)
+    &:after
+        big-dot(50px, bottom)
+
+.page__section
+    box-sizing border-box

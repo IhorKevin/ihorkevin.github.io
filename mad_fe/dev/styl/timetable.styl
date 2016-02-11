@@ -1,0 +1,93 @@
+.timetable
+    background-color white
+
+.timetable__frame
+    position relative
+    border 1px solid black
+    overflow: hidden
+    //background url(../img/bg-line.png) 50% 80px repeat-y
+
+    &:before
+        absolute top    left right
+        margin auto
+        width 1px
+        background-color black
+        height 100%
+        content ''
+
+    &:after
+        absolute top 17px left right
+        size(64px, 110px)
+        margin 0 auto
+        background url(../img/icon-calendar.png) 0 20px no-repeat, white
+        content ''
+
+.timetable__cell
+    float left
+    width 50%
+
+.timetable__title
+    margin 30px 0
+    font-size 30px
+    uppercase()
+    font-weight 200
+    text-align center
+
+.timetable__list
+    padding 30px 10px 30px 35px
+
+.timetable__item
+    position relative
+    padding-left 90px
+    line-height 50px
+    margin-bottom 24px
+
+
+.timetable__icon
+    absolute left top
+    display block
+    size(50px, 50px)
+    box-sizing border-box
+    border 1px solid #888888
+    border-radius 50%
+    background url($icon-sprite) 0 0 no-repeat, white
+
+    &:before
+        content ''
+        absolute bottom -25px left (50px/2)
+        size(1px, 24px)
+        background-color #888888
+
+    &:after
+        content ''
+        absolute right -25px top (50px/2)
+        size(24px, 1px)
+        background-color #888888
+
+.timetable__icon_last
+    &:before
+        display none
+
+.timetable__icon_microphone
+    background-position 0 0
+.timetable__icon_reg
+    background-position -50px 0
+.timetable__icon_coffee
+    background-position -100px 0
+.timetable__icon_man
+    background-position -150px 0
+.timetable__icon_apple
+    background-position -200px 0
+.timetable__icon_dinner
+    background-position -250px 0
+.timetable__icon_atom
+    background-position -300px 0
+.timetable__icon_android
+    background-position -350px 0
+.timetable__icon_yoga
+    background-position -400px 0
+.timetable__icon_dj
+    background-position -450px 0
+
+.timetable__text
+    white-space nowrap

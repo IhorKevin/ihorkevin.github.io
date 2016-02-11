@@ -1,0 +1,42 @@
+.intro
+    background url(../img/bg-big-circle.png) 0 0 repeat
+    color white
+    padding-top $menu-height * 2
+    padding-bottom 42px
+    text-align center
+
+.intro__title
+    margin 50px 0 26px 0
+    font-family: "PF Amateur", sans-serif
+    font-size 160px
+    line-height 130px
+    text-align left
+
+h-line($side)
+    absolute $side top (30px/2)
+    display block
+    content ''
+    width 32%
+    height 1px
+    background-color white
+
+.intro__top
+    position relative
+    display block
+    font-size 30px
+    uppercase()
+    font-weight 200
+    text-align center
+
+    &:before
+        h-line(left)
+
+    &:after
+        h-line(right)
+
+.intro__text
+    margin 0 0 50px 0
+    uppercase()
+    font-size 24px
+    font-weight 300
+    text-align left
