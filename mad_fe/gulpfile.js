@@ -32,7 +32,7 @@ gulp.task('stylus', function () {
 gulp.task('copy', function () {
     gulp.src('dev/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts'));
-    gulp.src('dev/vendor/**.*')
+    gulp.src('dev/vendor/**/*.*')
         .pipe(gulp.dest('build/vendor'));
 });
 
