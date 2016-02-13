@@ -4,14 +4,15 @@
     background url(../img/bg-circle.png) 0 0 repeat, $bg-color
     font-family Roboto, sans-serif
     font-size 16px
-    animation 5s mad-bg linear infinite alternate running
+    animation 5s mad-bg linear infinite
 
 @keyframes mad-bg {
-    0% { background-color: #f1c40f; }
-    32% { background-color: $special-color; }
-    55% { background-color: $base-color; }
-    76% { background-color: #16a085; }
-    100% { background-color: $bg-color; }
+    0% { background-color: $bg-color; }
+    20% { background-color: spin($bg-color, 72deg) }
+    40% { background-color: spin($bg-color, 144deg) }
+    60% { background-color: spin($bg-color, 216deg) }
+    80% { background-color: spin($bg-color, 288deg) }
+    100% { background-color: spin($bg-color, 360deg) }
 }
 
 .page__header
