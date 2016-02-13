@@ -10,5 +10,22 @@
 .about__item
     width 300px
 
+
 .about__button
     margin-top 80px
+
+.about__item img:first-child
+    animation wave-up 5s ease-in-out infinite
+
+.about__item:nth-child(2) img
+    animation-delay .3s
+.about__item:nth-child(3) img
+    animation-delay .6s
+
+@keyframes wave-up
+    0%
+        transform translateY(0%)
+    10%
+        transform translateY(-15%)
+    20%
+        transform translateY(0%)
