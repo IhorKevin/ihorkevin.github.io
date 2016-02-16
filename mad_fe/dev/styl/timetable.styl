@@ -41,6 +41,7 @@
     padding-left 90px
     line-height 50px
     margin-bottom 24px
+    opacity 0
 
 
 .timetable__icon
@@ -91,3 +92,14 @@
 
 .timetable__text
     white-space nowrap
+
+@keyframes opacity-in
+    0%
+        opacity 0
+    100%
+        opacity 1
+
+for i in 0..12
+    .timetable__item:nth-child({i})
+        animation opacity-in .5s forwards
+        animation-delay (.1s * i)
