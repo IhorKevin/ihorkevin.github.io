@@ -1,0 +1,42 @@
+.speaker
+    position relative
+    size(220px, 220px)
+    border-radius 50%
+    overflow hidden
+    border 6px solid white
+    box-shadow inset 0 0 10px #000000
+
+
+.speaker__photo
+    position absolute
+    z-index -1
+    width 100%
+    height auto
+
+.speaker__info
+    absolute bottom 0
+    z-index -1
+    width 100%
+    height 90px
+    background rgba($base-color, 80%)
+    text-align center
+    color white
+
+.speaker__name
+    padding 7px 0
+    font-size 20px
+    font-weight bold
+
+.speaker__text
+    font-size 14px
+    line-height 1.2
+    font-weight normal
+
+
+.speaker .speaker__info
+    transform translate(0%, 100%)
+    transition .3s ease-in
+
+.speaker:hover .speaker__info
+    transform translate(0%, 0%)
+    transition .3s ease-out
