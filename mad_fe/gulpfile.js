@@ -2,8 +2,10 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     stylus = require('gulp-stylus'),
     axis = require('axis'),
+    uglify = require('gulp-uglify'),
     imagemin = require('gulp-imagemin'),
     prefix = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     clean = require('del');
 
@@ -29,6 +31,12 @@ gulp.task('stylus', function () {
         .pipe(gulp.dest('build/css'));
 });
 
+gulp.task('js', function () {
+    gulp.src('dev/js/*.*')
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('build/js'));
+});
+
 gulp.task('copy', function () {
     gulp.src('dev/fonts/**/*.*')
         .pipe(gulp.dest('build/fonts'));
@@ -45,11 +53,12 @@ gulp.task('img', function() {
 gulp.task('watch', function() {
     gulp.watch('dev/*.html', ['html']);
     gulp.watch('dev/styl/*.styl', ['stylus']);
+    gulp.watch('dev/js/*.js', ['js']);
 });
 
 gulp.task('clean', function () {
     clean('build/*');
 });
 
-gulp.task('default', ['html', 'stylus', 'watch']);
-gulp.task('build', ['clean', 'html', 'stylus', 'copy', 'img']);
+gulp.task('default', ['html', 'stylus', 'js', 'watch']);
+gulp.task('build', ['clean', 'html', 'stylus','js', 'copy', 'img']);
