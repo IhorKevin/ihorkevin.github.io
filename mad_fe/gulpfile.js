@@ -34,6 +34,7 @@ gulp.task('stylus', function () {
 gulp.task('js', function () {
     gulp.src('dev/js/*.*')
         .pipe(concat('main.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('build/js'));
 });
 
