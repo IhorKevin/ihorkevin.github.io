@@ -82,7 +82,10 @@
     100%
         opacity 1
 
-for i in 0..12
-    .timetable__item:nth-child({i})
-        animation opacity-in .5s forwards
+for i in 0..10
+    .timetable__item:nth-child({1 + i})
+        animation-name opacity-in
+        animation-duration .5s
         animation-delay (.1s * i)
+        animation-play-state paused
+        animation-fill-mode forwards
