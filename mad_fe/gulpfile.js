@@ -7,7 +7,9 @@ var gulp = require('gulp'),
     prefix = require('gulp-autoprefixer'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
-    clean = require('del');
+    clean = require('del'),
+    gutil = require('gulp-util'),
+    ftp = require('gulp-ftp');
 
 
 gulp.task('html', function () {
@@ -55,6 +57,17 @@ gulp.task('watch', function() {
     gulp.watch('dev/*.html', ['html']);
     gulp.watch('dev/styl/*.styl', ['stylus']);
     gulp.watch('dev/js/*.js', ['js']);
+});
+
+gulp.task('deploy', function () {
+    return gulp.src('build/**/*')
+        .pipe(ftp({
+            host: 'goit.ftp.ukraine.com.ua',
+            user: 'goit_ftp',
+            pass: '9n3RQ5fr',
+            remotePath: '/goit.ua/frontend-madness/'
+        }))
+        .pipe(gutil.noop());
 });
 
 gulp.task('clean', function () {
