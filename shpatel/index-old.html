@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>КПІ шпатель</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="page" id="page">
+    <header class="page__header">
+        <div class="page__wrap">
+            <a href="/" class="logo"><img src="img/logo-shpatel.png" alt="" class="logo__img"></a>
+            <span class="page__question">Чим обмазуватись будеш?</span>
+        </div>
+    </header>
+    <main class="page__main">
+        <div class="buttons page__wrap">
+            <button class="buttons__item">Профком</button>
+            <button class="buttons__item buttons__item_negative">Жесті хочу</button>
+            <button class="buttons__item buttons__item_secondary">Мені пощастить</button>
+        </div>
+        <div class="page__wrap" id="post-box">
+            <!--<div class="post">-->
+                <!--<p class="post__text">-->
+                    <!--Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem commodi culpa, dicta doloribus fuga illum iusto labore minus nesciunt non odio quaerat qui rerum, saepe sequi voluptate! Aperiam, ducimus?-->
+                <!--</p>-->
+            <!--</div>-->
+        </div>
+    </main>
+
+    <script type="text/babel">
+
+        var Post = React.createClass({
+            render: function () {
+                return(
+                        <div class="post">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque autem commodi culpa, dicta doloribus fuga illum iusto labore minus nesciunt non odio quaerat qui rerum, saepe sequi voluptate! Aperiam, ducimus?
+                            </p>
+                        </div>
+                )
+            }
+        });
+
+        ReactDOM.render(
+                <Post />, document.getElementById('post-box')
+        );
+
+    </script>
+    <script src="bundle.js"></script>
+    </body>
+</html>

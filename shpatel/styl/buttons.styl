@@ -1,0 +1,39 @@
+.buttons
+    display flex
+    //align-content stretch
+    margin-bottom 40px
+
+.buttons__item
+    flex-basis 100px
+    flex-grow 1
+    min-height 50px
+    font-size 18px
+    color white
+    background-color $base-color
+    border 0
+    padding 0
+    cursor pointer
+    transition $normal
+    &:not(:first-child)
+        margin-left 20px
+
+    &:hover
+        background-color darken(@background-color, 10%)
+        transition $fast
+    &:active
+        background-color darken(@background-color, 20%)
+        transition 0s
+
+.buttons__item_negative
+    background-color $special-color
+    &:hover
+        background-color darken(@background-color, 10%)
+    &:active
+        background-color darken(@background-color, 20%)
+
+.buttons__item_secondary
+    background-color $secondary-color
+    &:hover
+        background-color darken(@background-color, 10%)
+    &:active
+        background-color darken(@background-color, 20%)
