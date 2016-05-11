@@ -5,8 +5,16 @@ class Post extends React.Component {
     componentDidMount() {
         let apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
         let xhr = new XMLHttpRequest();
-        xhr.open('GET', apiUrl);
-        xhr.send();
+
+
+        let getData = new Promise((resolve, reject) => {
+            xhr.open('GET', apiUrl);
+            xhr.send();
+        })
+
+        getData().then((res) => {
+            console.log(res);
+        })
     }
 
 

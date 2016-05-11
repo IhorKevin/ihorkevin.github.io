@@ -18569,8 +18569,15 @@
 	        value: function componentDidMount() {
 	            var apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
 	            var xhr = new XMLHttpRequest();
-	            xhr.open('GET', apiUrl);
-	            xhr.send();
+
+	            var getData = new Promise(function (resolve, reject) {
+	                xhr.open('GET', apiUrl);
+	                xhr.send();
+	            });
+
+	            getData().then(function (res) {
+	                console.log(res);
+	            });
 	        }
 	    }, {
 	        key: 'render',
