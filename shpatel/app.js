@@ -18567,17 +18567,28 @@
 	    _createClass(Post, [{
 	        key: 'componentDidMount',
 	        value: function componentDidMount() {
-	            var apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
-	            var xhr = new XMLHttpRequest();
+	            // let apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
+	            // let xhr = new XMLHttpRequest();
+	            //
+	            //
+	            // let getData = new Promise((resolve, reject) => {
+	            //     xhr.open('GET', apiUrl);
+	            //     xhr.send();
+	            // })
+	            //
+	            // getData().then((res) => {
+	            //     console.log(res);
+	            // })
 
-	            var getData = new Promise(function (resolve, reject) {
-	                xhr.open('GET', apiUrl);
-	                xhr.send();
-	            });
-
-	            getData().then(function (res) {
-	                console.log(res);
-	            });
+	            var method = 'wall.get';
+	            var options = {
+	                owner_id: 231242033,
+	                count: 1
+	            };
+	            function success(e) {
+	                console.log(e);
+	            }
+	            VK.Api.call(method, options, success);
 	        }
 	    }, {
 	        key: 'render',
