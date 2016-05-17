@@ -77,9 +77,9 @@
 
 	var method = 'wall.search';
 	var options = {
-	    owner_id: 231242033,
+	    owner_id: 5461421,
 	    count: 1,
-	    query: '#КПІ'
+	    query: 'Унґвар'
 	};
 	var post = {};
 
@@ -90,10 +90,13 @@
 	    new Promise(function (resolve, reject) {
 	        var method = 'users.get';
 	        var options = {
-	            user_ids: userId
+	            user_ids: userId,
+	            fields: 'quotes'
 	        };
 	        VK.Api.call(method, options, function (e) {
 	            post.user = e.response[0].first_name + ' ' + e.response[0].last_name;
+	            post.text = e.response[0].quotes;
+	            console.log(e.response);
 	        });
 	    }).then(console.log('Done!'));
 	}
@@ -18609,9 +18612,17 @@
 	            return _react2["default"].createElement(
 	                "div",
 	                { className: "page__wrap" },
-	                this.props.post.user,
-	                ": ",
-	                this.props.post.text
+	                _react2["default"].createElement(
+	                    "div",
+	                    { className: "post" },
+	                    _react2["default"].createElement(
+	                        "span",
+	                        { className: "post__author" },
+	                        this.props.post.user
+	                    ),
+	                    ": ",
+	                    this.props.post.text
+	                )
 	            );
 	        }
 	    }]);

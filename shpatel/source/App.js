@@ -4,9 +4,9 @@ import Main from './Main';
 
 let method = 'wall.search';
 let options = {
-    owner_id: 231242033,
+    owner_id: 5461421,
     count: 1,
-    query: '#КПІ'
+    query: 'Унґвар'
 };
 let post = {};
 
@@ -17,10 +17,13 @@ function success(e) {
     new Promise((resolve, reject) => {
         let method = 'users.get';
         let options = {
-            user_ids: userId
+            user_ids: userId,
+            fields: 'quotes'
         };
         VK.Api.call(method, options, (e) => {
             post.user = e.response[0].first_name + ' ' + e.response[0].last_name;
+            post.text = e.response[0].quotes;
+            console.log(e.response);
         });
     }).then(
         console.log('Done!')
