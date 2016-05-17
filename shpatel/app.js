@@ -75,10 +75,30 @@
 
 	var _Main2 = _interopRequireDefault(_Main);
 
-	var post = {
-	    text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi at consequuntur culpa deserunt esse ex facere fugit illo laboriosam laborum maxime quam quo ratione sapiente, suscipit! A earum impedit molestiae.',
-	    user: 'Джага Джагер'
+	var method = 'wall.search';
+	var options = {
+	    owner_id: 231242033,
+	    count: 1,
+	    query: '#КПІ'
 	};
+	var post = {};
+
+	function success(e) {
+	    var data = e.response[1];
+	    post.text = data.text;
+	    var userId = data.from_id;
+	    new Promise(function (resolve, reject) {
+	        var method = 'users.get';
+	        var options = {
+	            user_ids: userId
+	        };
+	        VK.Api.call(method, options, function (e) {
+	            post.user = e.response[0].first_name + ' ' + e.response[0].last_name;
+	        });
+	    }).then(console.log('Done!'));
+	}
+
+	VK.Api.call(method, options, success);
 
 	var App = (function (_React$Component) {
 	    _inherits(App, _React$Component);
@@ -104,7 +124,9 @@
 	    return App;
 	})(_react2['default'].Component);
 
-	_react2['default'].render(_react2['default'].createElement(App, { post: post }), document.getElementById('ebanyj-react'));
+	setTimeout(function () {
+	    _react2['default'].render(_react2['default'].createElement(App, { post: post }), document.getElementById('ebanyj-react'));
+	}, 1000);
 
 /***/ },
 /* 2 */
@@ -18535,21 +18557,21 @@
 /* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
-	Object.defineProperty(exports, '__esModule', {
+	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+	var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; desc = parent = undefined; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 	var _react = __webpack_require__(2);
 
@@ -18561,53 +18583,44 @@
 	    function Post() {
 	        _classCallCheck(this, Post);
 
-	        _get(Object.getPrototypeOf(Post.prototype), 'constructor', this).apply(this, arguments);
+	        _get(Object.getPrototypeOf(Post.prototype), "constructor", this).apply(this, arguments);
 	    }
 
 	    _createClass(Post, [{
-	        key: 'componentDidMount',
-	        value: function componentDidMount() {
-	            // let apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
-	            // let xhr = new XMLHttpRequest();
-	            //
-	            //
-	            // let getData = new Promise((resolve, reject) => {
-	            //     xhr.open('GET', apiUrl);
-	            //     xhr.send();
-	            // })
-	            //
-	            // getData().then((res) => {
-	            //     console.log(res);
-	            // })
+	        key: "render",
 
-	            var method = 'wall.get';
-	            var options = {
-	                owner_id: 231242033,
-	                count: 1
-	            };
-	            function success(e) {
-	                console.log(e);
-	            }
-	            VK.Api.call(method, options, success);
-	        }
-	    }, {
-	        key: 'render',
+	        // componentDidMount() {
+	        //     let apiUrl = 'http://api.vk.com/method/wall.get?owner_id=-111877258&count=2';
+	        //     let xhr = new XMLHttpRequest();
+	        //
+	        //
+	        //     let getData = new Promise((resolve, reject) => {
+	        //         xhr.open('GET', apiUrl);
+	        //         xhr.send();
+	        //     })
+	        //
+	        //     getData().then((res) => {
+	        //         console.log(res);
+	        //     })
+	        //
+	        // }
+
 	        value: function render() {
-	            return _react2['default'].createElement(
-	                'div',
-	                { className: 'page__wrap' },
+	            return _react2["default"].createElement(
+	                "div",
+	                { className: "page__wrap" },
 	                this.props.post.user,
-	                ': ',
+	                ": ",
 	                this.props.post.text
 	            );
 	        }
 	    }]);
 
 	    return Post;
-	})(_react2['default'].Component);
+	})(_react2["default"].Component);
 
-	exports['default'] = Post;
-	module.exports = exports['default'];
+	exports["default"] = Post;
+	module.exports = exports["default"];
 
 /***/ }
 /******/ ]);
