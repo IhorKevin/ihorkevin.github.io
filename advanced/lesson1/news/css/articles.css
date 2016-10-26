@@ -1,3 +1,8 @@
 .article_tmpl {
     display: none;
 }
+
+.nav-previous_hide,
+.nav-next_hide {
+    display: none;
+}

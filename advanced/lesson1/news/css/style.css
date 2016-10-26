@@ -613,6 +613,10 @@ nav #nav > li ul a:hover {
   float: right;
   background: url(../img/pagination.png) no-repeat right -59px;
 }
+#posts-list .page-navigation_tmpl {
+  display: none;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*	PROJECT PAGE
 /*-----------------------------------------------------------------------------------*/
