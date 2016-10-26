@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Дізнатись адмінів КПИ live</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body class="page">
+<div class="page__wrap">
+    <h1>Адміни пабліка КПИ live</h1>
+    <p class="">
+        Наш сервіс допоможе вам дізнатись поточних адміністраторів найбільшої спільноти КПІ у ВКонтакте.
+    </p>
+
+    <div class="loader">
+        <div class="load-bar">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <p><em>Подождите, срываются покровы...</em></p>
+    </div>
+
+    <div class="admins">
+        <h4 class="admins__title">В дайний момент сторінкою керують:</h4>
+        <ul class="admin-list"></ul>
+    </div>
+    <button class="button">Сорвать покровы</button>
+</div>
+
+<script src="//vk.com/js/api/openapi.js"></script>
+<script type="text/javascript">
+    VK.init({apiId: 5458397});
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.0.3/doT.min.js"></script>
+
+<script id="list-template" type="text/x-dot-template">
+    {{~ it :item}}
+    <li class="admin-list__item">
+        <div class="admin-list__avatar">
+            <a href="https://vk.com/id{{=item.uid}}" class="admin-list__link"><img src="{{=item.photo_50}}" alt="" class="admin-list__img"></a>
+        </div>
+        <div class="admin-list__username">
+            <a href="https://vk.com/id{{=item.uid}}" class="admin-list__link" target="_blank">{{=item.first_name}} {{=item.last_name}}</a>
+        </div>
+    </li>
+    {{~}}
+</script>
+
+<script src="main.js"></script>
+</body>
+</html>
+
