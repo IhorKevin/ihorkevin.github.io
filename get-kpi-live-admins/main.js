@@ -6,7 +6,7 @@
     var loader = $('.loader');
 
     var loadCounter = 0,
-        requestLimit = 37,
+        requestLimit = 8,
         idList = [];
 
     var usersData = [];
