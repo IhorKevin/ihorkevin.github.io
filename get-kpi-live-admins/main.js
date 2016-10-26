@@ -27,15 +27,16 @@
         loadCounter++;
 
         setTimeout(function () {
-            VK.Api.call(
-                'groups.getMembers',
-                {
+            $.ajax({
+                url: 'https://api.vk.com/method/groups.getMembers',
+                method: 'post',
+                data: {
                     group_id: 'kpi_live',
                     offset: loadCounter * 1000,
                     count: 1000
                 },
-                getSubscribers
-            );
+                success: getSubscribers
+            });
         }, 300);
     }
 
