@@ -63,9 +63,17 @@
             fields: 'photo_50'
         };
 
-        VK.Api.call(method, options, function (e) {
-            usersData = e.response;
-            renderList();
+        $.ajax({
+            url: 'https://api.vk.com/method/users.get',
+            method: 'post',
+            data: {
+                user_ids: ids.join(','),
+                fields: 'photo_50'
+            },
+            success: function (e) {
+                usersData = e.response;
+                renderList();
+            }
         });
     }
 
