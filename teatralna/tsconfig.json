@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "lib": [ "es7", "dom" ],
+    "outFile": "main.js",
+  },
+  "files": [
+    "main.ts"
+  ]
+}
