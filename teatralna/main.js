@@ -49,20 +49,15 @@ const renderSummary = (model) => {
     totalPercentageHolder.innerText = model.getPercentage().toFixed(2);
     totalCrossesHolder.innerText = model.getTotalCrosses().toString();
 };
-// initial calculation
 if (teatralnaForm.checkValidity() && entrances.some(input => Number(input.value) > 0)) {
-    // calculate result if form is valid and at least one person entered
     renderSummary(new Teatralna(getInputValues()));
 }
 inputs.forEach(input => {
     input.addEventListener('input', event => {
-        // check form validity
         if (!teatralnaForm.checkValidity()) {
             return;
         }
-        // create instance
         const teatralna = new Teatralna(getInputValues());
-        // render results
         renderSummary(teatralna);
     });
 });
