@@ -1,0 +1,161 @@
+html, body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+}
+.page {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #202020;
+}
+.title {
+    text-align: center;
+    padding: 0 1em;
+}
+.map {
+    display: grid;
+    grid-template-columns: 3fr 2fr 3fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 240px;
+    background-color: #f8f9fa;
+}
+.map__street {
+    min-width: 1em;
+    min-height: 1em;
+    background-color: #ffffff;
+}
+.map__street_vertical {
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+.map__street_horizontal {
+    grid-column: 1/4;
+    grid-row: 2/3;
+}
+.map__entrance {
+    display: flex;
+    padding: .5em;
+}
+.map__entrance_u {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.map__entrance_g {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    align-items: flex-end;
+}
+.map__entrance_m {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.map__entrance_t {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    align-items: flex-start;
+}
+.map__entrance_metro {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-items: center;
+    justify-content: center;
+}
+.map__crosswalk {
+    display: flex;
+    padding: .5em;
+}
+.map__crosswalk_potential {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-items: flex-start;
+    justify-content: center;
+}
+.map__crosswalk_present {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    align-items: flex-end;
+    justify-content: center;
+    display: none;
+}
+.entrance {
+    display: flex;
+    align-items: center;
+}
+.entrance__icon {
+    padding: 0 .2em;
+}
+.entrance__count {
+    min-width: 3ch;
+    width: 5ch;
+    max-width: 6ch;
+    border: 0;
+    padding: .2em;
+    font-family: inherit;
+    font-size: inherit;
+}
+.entrance__stairs {
+    display: flex;
+    align-items: center;
+    padding: .2em;
+    border: 2px solid #a3a3a3;
+}
+.entrance_left .entrance__stairs {
+    border-left: 0;
+    padding-left: 1em;
+    padding-right: 0;
+    background-image: linear-gradient(to right, rgba(163, 163, 163, 0) 20%, rgb(163, 163, 163) 100%);
+}
+.entrance_right .entrance__stairs {
+    border-right: 0;
+    padding-right: 1em;
+    padding-left: 0;
+    background-image: linear-gradient(to left, rgba(163, 163, 163, 0) 20%, rgba(163, 163, 163, 1) 100%);
+}
+.crosswalk {
+    display: flex;
+    align-items: center;
+    padding: .2em;
+    border-top: 2px solid #a3a3a3;
+    border-bottom: 2px solid #a3a3a3;
+}
+.crosswalk__count {
+    min-width: 3ch;
+    width: 5ch;
+    max-width: 6ch;
+    border: 0;
+    padding: .2em;
+    font-family: inherit;
+    font-size: inherit;
+}
+.summary {
+    margin-top: 1em;
+    padding: 0 1em;
+}
+.summary-table {
+    width: 100%;
+}
+.summary-table tbody tr td {
+    border-top: 1px solid #eeeeee;
+}
+.summary-table th {
+    text-align: left;
+}
+.numeric {
+    text-align: right;
+    white-space: nowrap;
+}
+@media screen and (max-width: 340px) {
+    .map {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+}

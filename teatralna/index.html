@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Перехід на метро Театральна</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css?v0.1.0">
+</head>
+<body class="page">
+    <h1 class="title">Підрахунок пішохідного трафіку біля станції метро Театральна</h1>
+    <form class="map" id="teatralna">
+        <div class="map__street map__street_vertical"></div>
+        <div class="map__street map__street_horizontal"></div>
+        <div class="map__entrance map__entrance_u">
+            <div class="entrance entrance_left">
+                <label class="entrance__stairs">
+                    <input type="number" name="entrance_1" class="entrance__count" required value="0" min="0" title="Вхід Укрінформ">
+                    <span class="entrance__icon fas fa-arrow-right"></span>
+                </label>
+            </div>
+        </div>
+        <div class="map__crosswalk map__crosswalk_potential">
+            <label class="crosswalk">
+                <span class="crosswalk__icon fas fa-arrow-left"></span>
+                <input type="number" name="potential_crosswalk" class="crosswalk__count" value="0" min="0" title="Майбутній наземний перехід">
+                <span class="crosswalk__icon fas fa-arrow-right"></span>
+            </label>
+        </div>
+        <div class="map__entrance map__entrance_g">
+            <div class="entrance entrance_right">
+                <label class="entrance__stairs">
+                    <span class="entrance__icon fas fa-arrow-left"></span>
+                    <input type="number" name="entrance_2" class="entrance__count" required value="0" min="0" title="Вхід Нафтогаз">
+                </label>
+            </div>
+        </div>
+        <div class="map__entrance map__entrance_metro">
+            <div class="entrance entrance_right">
+                <label class="entrance__stairs">
+                    <span class="entrance__icon fas fa-subway"></span>
+                    <input type="number" name="elevator" class="entrance__count" required value="0" min="0" title="Ескалатор">
+                </label>
+            </div>
+        </div>
+        <div class="map__entrance map__entrance_m">
+            <div class="entrance entrance_left">
+                <label class="entrance__stairs">
+                    <input type="number" name="entrance_3" class="entrance__count" required value="0" min="0" title="Вхід Музей">
+                    <span class="entrance__icon fas fa-arrow-right"></span>
+                </label>
+            </div>
+        </div>
+        <div class="map__entrance map__entrance_t">
+            <div class="entrance entrance_right">
+                <label class="entrance__stairs">
+                    <span class="entrance__icon fas fa-arrow-left"></span>
+                    <input type="number" name="entrance_4" class="entrance__count" required value="0" min="0" title="Вхід Театр">
+                </label>
+            </div>
+        </div>
+
+        <div class="map__crosswalk map__crosswalk_present">
+            <label class="crosswalk">
+                <span class="crosswalk__icon fas fa-arrow-left"></span>
+                <input type="number" name="crosswalk" class="crosswalk__count" value="0" min="0" title="Майбутній наземний перехід">
+                <span class="crosswalk__icon fas fa-arrow-right"></span>
+            </label>
+        </div>
+    </form>
+    <div class="summary">
+        <table class="summary-table" id="summary-table">
+            <thead>
+            <tr>
+                <th>Категорія</th>
+                <th>Кількість, чол</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Увійшли в перехід</td>
+                <td class="numeric total-entered">0</td>
+            </tr>
+            <tr>
+                <td>Перетнули вулицю (не пішли в метро)</td>
+                <td class="numeric underground-crosses">0</td>
+            </tr>
+            <tr>
+                <td>Перебігли по землі</td>
+                <td class="numeric ground-crosses">0</td>
+            </tr>
+            </tbody>
+        </table>
+        <p>
+            <strong><span id="total-percentage">0</span>%</strong> людей могли не спускатись в підземний перехід.
+        </p>
+        <p>
+            <strong><span id="total-crosses">0</span></strong> - стільки людей за годину потребують наземний перехід вже зараз.
+        </p>
+    </div>
+    <script src="main.js?v0.1.0"></script>
+</body>
+</html>
