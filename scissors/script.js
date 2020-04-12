@@ -31,7 +31,6 @@ frontHalf.addEventListener('transitionend', () => udpateAnimationHalf(frontHalf,
 
 function udpateAnimationHalf(elem, animationName) {
     if(elem.style.transform) {
-        console.log('TRANS END', elem.style.transform);
         elem.style.transform = '';
         elem.style.animationName = animationName;
     }
