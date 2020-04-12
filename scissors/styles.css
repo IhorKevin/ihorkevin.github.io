@@ -20,12 +20,18 @@
     position: relative;
     width: 165px;
     height: 451px;
-    cursor: pointer;
+    user-select: none;
 }
 
 .scissors_closed .scissors__half {
     transform: rotateZ(0deg) !important;
     transition: 50ms;
+}
+
+@media (min-width: 768px) {
+    .scissors {
+        cursor: pointer;
+    }
 }
 
 .scissors__half {
@@ -37,6 +43,7 @@
     transition: 200ms;
     background-size: contain;
     background-repeat: no-repeat;
+    user-select: none;
 }
 
 .scissors__half_back {
@@ -103,6 +110,7 @@
 .result-table {
     margin-top: 2rem;
     max-width: 768px;
+    border-collapse: collapse;
 }
 .result-table td {
     padding: .25em .5em;
@@ -116,3 +124,6 @@
     color: #d6b161;
 }
 
+.quote {
+    padding: 0 .5rem;
+}
